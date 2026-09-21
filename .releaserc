@@ -8,48 +8,81 @@
   ],
   "plugins": [
     [
-        "@semantic-release/commit-analyzer", {
+      "@semantic-release/commit-analyzer",
+      {
         "releaseRules": [
-            { "type": "fix", "release": "patch" },
-            { "type": "feat", "release": "minor" },
-            { "type": "bump", "release": "patch" },
-            { "type": "perf", "release": "patch" },
-            { "type": "build", "scope": "Needs bump", "release": "patch" }
+          {
+            "type": "fix",
+            "release": "patch"
+          },
+          {
+            "type": "feat",
+            "release": "minor"
+          },
+          {
+            "type": "bump",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "release": "patch"
+          },
+          {
+            "type": "build",
+            "scope": "Needs bump",
+            "release": "patch"
+          }
         ]
-        }
+      }
     ],
     [
-        "@semantic-release/release-notes-generator", {
+      "@semantic-release/release-notes-generator",
+      {
         "preset": "conventionalcommits",
         "presetConfig": {
-            "types": [
-                { "type": "fix", "section": "🐛 Bug Fixes", "hidden": false },
-                { "type": "feat", "section": "✨ New Features", "hidden": false },
-                { "type": "bump", "section": "🚀 Updated App Support", "hidden": false },
-                { "type": "perf", "section": "🔧 Improvements",  "hidden": false },
-                { "type": "build", "hidden": true }
-            ]
+          "types": [
+            {
+              "type": "fix",
+              "section": "Bug Fixes",
+              "hidden": false
+            },
+            {
+              "type": "feat",
+              "section": "New Features",
+              "hidden": false
+            },
+            {
+              "type": "bump",
+              "section": "Updated App Support",
+              "hidden": false
+            },
+            {
+              "type": "perf",
+              "section": "Improvements",
+              "hidden": false
+            },
+            {
+              "type": "build",
+              "hidden": true
+            }
+          ]
         }
-        }
+      }
     ],
     [
-      "@MorpheApp/changelog", {
-        "releaseJson": {
-          "path": "patches-bundle.json",
-          "downloadUrlTemplate": "https://github.com/${owner}/${repo}/releases/download/v${version}/patches-${version}.mpp",
-          "signatureUrlTemplate": ""
-        }
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
       }
     ],
     "gradle-semantic-release-plugin",
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "./gradlew generatePatchesList \
-          && jq '.version=\"${nextRelease.version}\"' patches-list.json > patches-list.json.tmp && mv patches-list.json.tmp patches-list.json \
-          && python3 .github/scripts/generate_patches_readme.py $GITHUB_REPOSITORY $GITHUB_REF_NAME patches-list.json README.md"
+        "prepareCmd": "./gradlew generatePatchesList && jq ' .version=\"${nextRelease.version}\" ' patches-list.json > patches-list.json.tmp && mv patches-list.json.tmp patches-list.json && python3 .github/scripts/generate_patches_readme.py \"$GITHUB_REPOSITORY\" \"$GITHUB_REF_NAME\" patches-list.json PATCHES.md"
       }
     ],
+    "./.github/scripts/bundle-metadata.cjs",
     [
       "@semantic-release/git",
       {
@@ -58,9 +91,9 @@
           "gradle.properties",
           "patches-bundle.json",
           "patches-list.json",
-          "README.md"
+          "PATCHES.md"
         ],
-        "message": "chore: Release v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "chore: Release Series Tracker ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
@@ -68,18 +101,15 @@
       {
         "assets": [
           {
-            "path": "patches/build/libs/patches-!(*sources*|*javadoc*).mpp?(.asc)"
-          }
+            "path": ".local/release-assets/*.mpp"
+          },
+          "LICENSE",
+          "NOTICE"
         ],
-        "successComment": false
-      }
-    ],
-    [
-      "@cleyrop-org/semantic-release-backmerge",
-      {
-        "backmergeBranches": [{"from": "main", "to": "dev"}],
-        "clearWorkspace": true
+        "successComment": false,
+        "releaseNameTemplate": "Series Tracker ${nextRelease.version}"
       }
     ]
-  ]
+  ],
+  "tagFormat": "series-v${version}"
 }

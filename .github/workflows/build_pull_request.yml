@@ -7,7 +7,11 @@ on:
       - dev
   pull_request:
     branches:
+      - main
       - dev
+
+permissions:
+  contents: read
 
 jobs:
   release:
@@ -26,13 +30,19 @@ jobs:
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
 
+      - name: Check release metadata
+        run: node --test .github/scripts/bundle-metadata.test.cjs
+
+      - name: Prepare public build inputs
+        run: python3 scripts/bootstrap.py
+
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:buildAndroid :patches:checkStringResources :extensions:youtube:testDebugUnitTest --no-daemon
+        run: ./gradlew :patches:buildAndroid :patches:checkStringResources :patches:test :extensions:youtube:testDebugUnitTest --no-daemon
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v7
         with:
           archive: false
-          path: patches/build/libs
+          path: patches/build/libs/patches-*.mpp

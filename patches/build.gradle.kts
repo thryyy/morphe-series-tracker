@@ -1,13 +1,13 @@
-group = "app.morphe"
+group = "app.seriestracker"
 
 patches {
     about {
-        name = "Morphe Patches"
-        description = "Patches for Morphe"
-        source = "git@github.com:MorpheApp/morphe-patches.git"
-        author = "MorpheApp"
+        name = "Series Tracker"
+        description = "YouTube Series tracking with Morphe patches"
+        source = "https://github.com/thryyy/morphe-series-tracker"
+        author = "Series Tracker contributors"
         contact = "na"
-        website = "https://morphe.software"
+        website = "https://github.com/thryyy/morphe-series-tracker"
         license = "GNU General Public License v3.0, with additional GPL section 7 requirements"
     }
 }
@@ -73,4 +73,8 @@ tasks {
     publish {
         dependsOn("generatePatchesList")
     }
+}
+
+tasks.withType<Jar>().configureEach {
+    from(rootProject.file("LICENSE"), rootProject.file("NOTICE"))
 }

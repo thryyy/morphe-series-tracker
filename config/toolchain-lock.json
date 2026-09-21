@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "name": "morphe-patches-gradle-plugin",
+      "version": "1.3.4",
+      "commit": "a230c33f7eca1e18b07bf1114ca850421520f98d",
+      "url": "https://codeload.github.com/MorpheApp/morphe-patches-gradle-plugin/tar.gz/a230c33f7eca1e18b07bf1114ca850421520f98d",
+      "sha256": "545d28e7e7a7886389a1f8783d5b6b98eca245d40519a182d7d368fd65d88e5d"
+    },
+    {
+      "name": "morphe-patcher",
+      "version": "1.14.0",
+      "url": "https://codeload.github.com/MorpheApp/morphe-patcher/tar.gz/5eacde46237f2fe657eb9bfbe90d2528d248a336",
+      "sha256": "709dca2a286392bdced7e5c30850b82b87484f09844c6a30fba8887bbe308588",
+      "commit": "5eacde46237f2fe657eb9bfbe90d2528d248a336"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "morphe-patches-library-1.7.1-dev.1.jar",
+      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.7.1-dev.1/morphe-patches-library-1.7.1-dev.1.jar",
+      "sha256": "a562df0b1a81a799e09399d3fe72e6bb3a8ecbfd035a9f94e71fd46063c8e0dc",
+      "purpose": "build"
+    },
+    {
+      "name": "morphe-extensions-library-1.7.1-dev.1.aar",
+      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.7.1-dev.1/morphe-extensions-library-release.aar",
+      "sha256": "994607eaa009ffbeeef1e135c0865d9c5054d8593b7185a4a49508e8218630ea",
+      "purpose": "build"
+    },
+    {
+      "name": "morphe-desktop-1.16.0-all.jar",
+      "url": "https://github.com/MorpheApp/morphe-desktop/releases/download/v1.16.0/morphe-desktop-1.16.0-all.jar",
+      "sha256": "82a0df2ff881d83d5ca8b4f9a6ce196bd4ac3b87ff147fe37845c296b436806c",
+      "purpose": "patch"
+    }
+  ]
+}

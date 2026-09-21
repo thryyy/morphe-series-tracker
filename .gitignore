@@ -35,3 +35,17 @@ google-services.json
 
 # NPM modules
 node_modules/
+
+# Local build inputs and device checks
+.local/
+.kotlin/
+.DS_Store
+.env
+.env.*
+*.apkm
+*.mpp
+*.mpe
+*.p12
+*.pem
+__pycache__/
+*.pyc
