@@ -1,6 +1,8 @@
 # Development
 
-`codex/series-tracking-dev` contains the Series feature on Morphe’s `dev` branch, without distribution changes. Keep fixes suitable for an upstream PR there, then merge them into the distribution branch.
+`codex/series-tracking-pr` contains only the Series code and resources for an upstream PR against Morphe’s `dev` branch. Keep the upstream build files and workflows unchanged.
+
+`main` maintains this patch source, releases and the regression suite. Keep tests and APK verification tools here; they are not part of the upstream submission. Apply feature fixes to both branches and record build and device results in the PR. The older `codex/series-tracking-dev` branch is retained for release history.
 
 The build uses checksum-pinned public sources for Morphe’s Gradle plugin and patcher, plus published libraries. `scripts/bootstrap.py` downloads them into ignored `.local/`. Transitive dependencies still come from the upstream repositories. No personal access token is needed for local builds.
 
