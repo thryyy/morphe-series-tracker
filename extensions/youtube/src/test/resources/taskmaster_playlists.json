@@ -1,0 +1,562 @@
+{
+  "contents": {
+    "twoColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EghmZWF0dXJlZPIGBAoCMgA%3D"
+              }
+            },
+            "title": "Home"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgZ2aWRlb3PyBgQKAjoA"
+              }
+            },
+            "title": "Videos"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgZzaG9ydHPyBgUKA5oBAA%3D%3D"
+              }
+            },
+            "title": "Shorts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgdzdHJlYW1z8gYECgJ6AA%3D%3D"
+              }
+            },
+            "title": "Live"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVzaG93c_IGBAoCYgA%3D"
+              }
+            },
+            "title": "Shows"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "Eghwb2RjYXN0c_IGBQoDugEA"
+              }
+            },
+            "title": "Podcasts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EglwbGF5bGlzdHPyBgoKCEIGCgIQaCIA"
+              }
+            },
+            "title": "Playlists",
+            "selected": true,
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "itemSectionRenderer": {
+                      "contents": [
+                        {
+                          "gridRenderer": {
+                            "items": [
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster X GOSH"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLIWjepTgy_uU",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 22 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLFVQxZZUqPnA",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "The Story Of..."
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWJeXJq1j14uqY2jNMr6GzF8",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 21 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIafhw3XHnmz_EHOp32qoZW",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Contestant Interviews"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIe8qu5YwxqA2SLXJ-S58Sq",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmastermind"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKBFEYIzJHQEm7uT7KMLurJ",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 20 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIw0I16OiwaYadP76yrM1H2",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 19 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIkom7BxCSd6Cag1IzfyZSQ",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 18 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKov-zTwmgQ1J7AFNKlJOrK",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 17 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKVc1UOyI-UzgT5u88ohWMr",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 16 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIMRiSQjbKp8_v0wHOiWALn",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 15 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWK0lxht_Hrgh_bqcyzJOu73",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 13 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKI_aaJJTlJPYV2tgeEJ0VL",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 14 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKOS500GkZc66Fx2bm0Jdtz",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 12 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWLgSYhY37RzGKSJV-NXp5wt",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 11 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWK5vm57zXqJiv_VZjd6Fj4Z",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 10 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWJm0pJfkk-Ski28mMpS_C5M",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 9 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIGmiVTlk0o-Xl9OEIyWA1T",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Season 8 - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWLesCjpb5P07gfn0mY4bhl-",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "My Ultimate Episode"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIlSsEAiewivVhwt2X5PcQN",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster: The Video Podcast"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWK9U4Uq7MeS4Tjj-G5YQcQz",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster NZ - Season 6 | Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWKJS2drl8dUq0-hjOyWHUlc",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster Australia Season 4"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIgXBQaBNayefCUx8LggJYs",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Series 20"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWJcU34hrRCiW4hcSGJlTbrp",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster NZ - Season 5 | Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIaU95OV6L2hymQnx95R6wT",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster Australia Season 3"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWLl4d9RnEr9yqFPhSigkHbh",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Series 19"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWI6O2S2h0D5-stdkV8VN_su",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Taskmaster - Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWIH8s4IZfWLylrMoIO379df",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Lost Links"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWLyRUM9JTMlCZid5HtXMBTG",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "lockupViewModel": {
+                                  "metadata": {
+                                    "lockupMetadataViewModel": {
+                                      "title": {
+                                        "content": "Junior Taskmaster - Season 1 | Full Episodes"
+                                      },
+                                      "metadata": {}
+                                    }
+                                  },
+                                  "contentId": "PLRWvNQVqAeWLPTyNzwr_pKTGLhAcLH4bv",
+                                  "contentType": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+                                }
+                              },
+                              {
+                                "continuationItemRenderer": {
+                                  "continuationEndpoint": {
+                                    "continuationCommand": {
+                                      "token": "channel-next-page"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVwb3N0c_IGBAoCSgA%3D"
+              }
+            },
+            "title": "Posts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVzdG9yZfIGBAoCGgA%3D"
+              }
+            },
+            "title": "Store"
+          }
+        },
+        {}
+      ]
+    }
+  },
+  "metadata": {
+    "channelMetadataRenderer": {
+      "title": "Taskmaster",
+      "externalId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+    }
+  }
+}

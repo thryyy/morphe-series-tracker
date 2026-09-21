@@ -26,9 +26,32 @@ dependencies {
 
     // Android API stubs defined here.
     compileOnly(project(":patches:stub"))
+
+    testImplementation("junit:junit:4.13.2")
 }
 
 tasks {
+    register<JavaExec>("verifySeriesHost") {
+        description = "Checks native History discovery and renamed host contracts (-PseriesHostApk=/path/to.apk)"
+        dependsOn(testClasses)
+        classpath = sourceSets["test"].runtimeClasspath
+        mainClass.set("app.morphe.patches.youtube.video.series.NativeHistoryHostVerifierKt")
+        maxHeapSize = "2g"
+        doFirst {
+            args(providers.gradleProperty("seriesHostApk").get())
+        }
+    }
+
+    register<JavaExec>("verifySeriesApk") {
+        description = "Checks Series tracking integration in a patched APK (-PseriesApk=/path/to.apk)"
+        dependsOn(testClasses)
+        classpath = sourceSets["test"].runtimeClasspath
+        mainClass.set("app.morphe.patches.youtube.video.series.IntegrationArtifactVerifierKt")
+        doFirst {
+            args(providers.gradleProperty("seriesApk").get())
+        }
+    }
+
     register<JavaExec>("checkStringResources") {
         description = "Checks resource strings for invalid formatting"
 

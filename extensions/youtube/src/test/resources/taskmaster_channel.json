@@ -1,0 +1,116 @@
+{
+  "contents": {
+    "twoColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EghmZWF0dXJlZPIGBAoCMgA%3D"
+              }
+            },
+            "title": "Home",
+            "selected": true,
+            "content": {}
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgZ2aWRlb3PyBgQKAjoA"
+              }
+            },
+            "title": "Videos"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgZzaG9ydHPyBgUKA5oBAA%3D%3D"
+              }
+            },
+            "title": "Shorts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgdzdHJlYW1z8gYECgJ6AA%3D%3D"
+              }
+            },
+            "title": "Live"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVzaG93c_IGBAoCYgA%3D"
+              }
+            },
+            "title": "Shows"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "Eghwb2RjYXN0c_IGBQoDugEA"
+              }
+            },
+            "title": "Podcasts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EglwbGF5bGlzdHPyBgoKCEIGCgIQaCIA"
+              }
+            },
+            "title": "Playlists"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVwb3N0c_IGBAoCSgA%3D"
+              }
+            },
+            "title": "Posts"
+          }
+        },
+        {
+          "tabRenderer": {
+            "endpoint": {
+              "browseEndpoint": {
+                "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ",
+                "params": "EgVzdG9yZfIGBAoCGgA%3D"
+              }
+            },
+            "title": "Store"
+          }
+        },
+        {}
+      ]
+    }
+  },
+  "metadata": {
+    "channelMetadataRenderer": {
+      "title": "Taskmaster",
+      "externalId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+    }
+  }
+}

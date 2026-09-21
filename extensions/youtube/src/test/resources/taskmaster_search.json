@@ -1,0 +1,547 @@
+{
+  "contents": {
+    "sectionListRenderer": {
+      "contents": [
+        {
+          "itemSectionRenderer": {
+            "contents": [
+              {},
+              {}
+            ]
+          }
+        },
+        {
+          "itemSectionRenderer": {
+            "contents": [
+              {},
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLRWvNQVqAeWIH8s4IZfWLylrMoIO379df",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster - Full Episodes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLRWvNQVqAeWIH8s4IZfWLylrMoIO379df"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLRWvNQVqAeWIafhw3XHnmz_EHOp32qoZW",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Season 21 - Full Episodes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLRWvNQVqAeWIafhw3XHnmz_EHOp32qoZW"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLj3wnRdyoKVRM9DqNzJnXD6XORLla6LxK",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster All Episodes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Alex",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UC-CQOewlpNMkVAnI7o2fyIg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLj3wnRdyoKVRM9DqNzJnXD6XORLla6LxK"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLdBFQznl9Yr8",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster New Zealand - Season 3 | Full Episoides"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster International",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCx9l0FfNQ3G79_9SBxkhR9g"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLdBFQznl9Yr8"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLoTJKFYy9aAo_630Mll10LvLVx9umVgdk",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster Interviews"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Eytan Zweig",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCZVZamCHk6GO5a-SrtaBG7A"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLoTJKFYy9aAo_630Mll10LvLVx9umVgdk"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLRWvNQVqAeWJWnXHeD-9tqShvMp9nZ7Vf",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Full Tasks"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLRWvNQVqAeWJWnXHeD-9tqShvMp9nZ7Vf"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLDIeeQvqTu2Loil8EtjiaQFdt6pnA7qNT",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster COMPLETE SERIES"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "FWCI Etc",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCzfbo5NgfVNgRCbb61iWaMg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLDIeeQvqTu2Loil8EtjiaQFdt6pnA7qNT"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLHOI7Nxq7Z-dGlF_QnD9OQC2VqGUfK90Y",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "All Taskmaster Outtakes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "BS",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCOt6FKKp13ns7afEwphpc9w"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLHOI7Nxq7Z-dGlF_QnD9OQC2VqGUfK90Y"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PL7BDDxOoHVjZunKUZD4lE64bxzYfaNR40",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster UK"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Chrissie Canuck",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UC29IW2OhkkeNkwBphZTj3KA"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPL7BDDxOoHVjZunKUZD4lE64bxzYfaNR40"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLRWvNQVqAeWIyG86-21N5D_Oe2yuIPDpS",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Outtakes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCT5C7yaO3RVuOgwP8JVAujQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLRWvNQVqAeWIyG86-21N5D_Oe2yuIPDpS"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLIkVy28p9iuMSn-TE4qIYouonusds9V4a",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster Outtakes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Jackler",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCPr9nN6Uw2wqjFZxVH3M6uw"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLIkVy28p9iuMSn-TE4qIYouonusds9V4a"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLIoSu2N9DHjc",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster SERIES 22"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "FWCI Etc",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCzfbo5NgfVNgRCbb61iWaMg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLIoSu2N9DHjc"
+                    }
+                  }
+                }
+              },
+              {},
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLFfMrIwMrFYxbavAu3jh60464teHOs4ew",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster UK Cast Reveals"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "TaskMasterInfo (TMI)",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UC_q7wyE-r8wgOHldqx3nNBA"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLFfMrIwMrFYxbavAu3jh60464teHOs4ew"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLI3VCsQlYPzcgSS5SnIGa80Zdvt1EsMPG",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Series 18 - Full Episodes | Taskmaster"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "petsalamander",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCCX3zyCtsqzC0yo-acOCUyQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLI3VCsQlYPzcgSS5SnIGa80Zdvt1EsMPG"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PL1AI_3vHNMyTa-7Fptsa0Jhhr7f1epgJY",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Task Locked"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Nooblet",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCaiAMjBO4UMyBWHqE2IlXsg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPL1AI_3vHNMyTa-7Fptsa0Jhhr7f1epgJY"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLDIeeQvqTu2JJJr4T3ksYTnCxTXjTbAHv",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster SERIES 20"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "FWCI Etc",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCzfbo5NgfVNgRCbb61iWaMg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLDIeeQvqTu2JJJr4T3ksYTnCxTXjTbAHv"
+                    }
+                  }
+                }
+              },
+              {},
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLbs-Pk9dtKb9m2NTl1XqFPV4mnexpHuKV",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Radio Times",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UC1IA2x0IazEVqAG5_WjxBAg"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLbs-Pk9dtKb9m2NTl1XqFPV4mnexpHuKV"
+                    }
+                  }
+                }
+              },
+              {
+                "compactPlaylistRenderer": {
+                  "playlistId": "PLaOwftSqwI1hm76EXka5TaGpF8YZ0_Xyd",
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "Taskmaster UK All Episodes"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "lchvz22",
+                        "navigationEndpoint": {
+                          "browseEndpoint": {
+                            "browseId": "UCZDDSk5EwHR2LkK1W7INurQ"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "browseEndpoint": {
+                      "browseId": "VLPLaOwftSqwI1hm76EXka5TaGpF8YZ0_Xyd"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

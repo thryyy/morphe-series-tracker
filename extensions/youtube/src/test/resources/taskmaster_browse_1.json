@@ -1,0 +1,866 @@
+{
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "selected": true
+          }
+        }
+      ]
+    }
+  },
+  "continuationContents": {
+    "playlistVideoListContinuation": {
+      "contents": [
+        {
+          "playlistVideoRenderer": {
+            "videoId": "ljLBbpnkK2c",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 4, Episode 5 -'Meat.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2715",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "nhxhHEI3Exk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Series 4, Episode 6 - 'Spatchcock It' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2714",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "H0hpIKf80T0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Series 4, Episode 7 -  'No Stars for Naughty Boys' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2705",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "PNrVNbLGcY8",
+            "title": {
+              "runs": [
+                {
+                  "text": "Series 4, Episode 8 - 'Tony Three Pies' | Full Episode |"
+                }
+              ]
+            },
+            "lengthSeconds": "2716",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "5PmmtbBgNLI",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 1 - 'Dignity Intact.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2704",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "Jx-L48koQY4",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 2 - 'The Leprechaun or The Lesbian' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2710",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "Wu1kSXpVV8Y",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 3 - 'Phoenix.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2715",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "xFHWPpltI0A",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 4 - 'Residue Around The Hoof' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2704",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "GlQLCTg5e_A",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 5 - 'A Wind-dried Puffin' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2703",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "1GyE1DvUws0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 6 - 'Spoony Neeson' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2693",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "IIHKAfxrZdg",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 7 | Full Episode | 'Boing Boing' | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2708",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "au27epHLAss",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 5, Episode 8 - 'Their Water's So Delicious' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2687",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "hGOUR26pLz0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Champion of Champions 1 - Episode 1 | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2708",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "EylSOBOuqNY",
+            "title": {
+              "runs": [
+                {
+                  "text": "Champion of Champions - Episode 2 | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2689",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "UMdpbvTiA2g",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 1 -'The Old Soft Curved Padlock' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "ZU-_qw3MoU4",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 2 - 'Tarpeters' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "X7edF5WRnpU",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 3 - 'One Warm Prawn'| Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2636",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "xNA4a5pOeFc",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 4 - 'BMXing' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "HDJwZGkvqC0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 5 - 'H.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2666",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "O2eOLmxw1d4",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 6 - 'We Met at Mealtimes.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "it4s4HOEpdk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 7 - 'Roadkill Doused in Syrup' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2663",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "it_1RUCgpXM",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 8 - 'What Kind of Photos?' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "rISwkaS3wiI",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 9 - 'The Bubble Brothers' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2653",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "xR_MkvUD-V0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 6, Episode 10 - 'He Was a Different Man' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2676",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "dudmIc5AWR0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 1 -  'The Mean Bean' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2650",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "zVvCDSK5NsQ",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 2 - 'My Eyes are Circles' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "jYwwxAolgPI",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 3 - 'Twelve Blush Majesty Two' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2642",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "M0ZbPzHUiAo",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 4 - 'OLLIE.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2657",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "yvS5_FG2zag",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 5 -  'Lotta Soup' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "t6AdwIdqNqI",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 6 -  'A coquettish fascinator' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2640",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "RDnRoxgZhV0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 7 - 'The perfect stuff' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "ZNJb2NC8KD0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 8 - 'Mother honks her horn.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "dzgWSEj8h58",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 9 | 'The pendulum draws the eye.' | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "wjARUcpnQ24",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 7, Episode 10 | 'I can hear it gooping' | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2689",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "39n5LJel7qk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 1 - 'Hello.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2671",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "4NYEgDNEWUE",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 2 | 'A Novel About Russian Gulags.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "H6CF2rNZsYE",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 3 - 'Stuck in a Mammal Groove.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2654",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "cCBXxJtR9AE",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 4 - 'The Barrel Dad.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "ZWmqBUj680A",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 5 -  'Stay Humble.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2654",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "3c4ildPel5I",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 6 - 'Rock 'n' roll umlaut.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2656",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "a4Qd_e8VWl0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 7 -  'This is Trevor.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2651",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "vPZ19L85_eA",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 8 -  'Aquatic sewing machine.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2654",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "soNiEk_fMCE",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 9 - 'I've been a bit ill.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2654",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "C0TRAb_aHpk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 8, Episode 10 - 'Clumpy swayey clumsy man.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2683",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "2BNpnbiFlTk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 1 - 'Join Our Cult.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2650",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "huB67xaX47A",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 2 - 'Butter In The Microwave.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2685",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "fh3-FlD8SxU",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 3 - 'Five Miles Per Day.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2657",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "ByIgWZBZM-w",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 4 -  'Quisps.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2640",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "G_0_mIgC-fw",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 5 -  'Another Spoon.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2657",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "tALqBLizFmg",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 6 | Full Episode | \"Bready Bready Bready' | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2657",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "o_Nc5j2xGg8",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 7 - 'A Cuddle.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2655",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "RiAttf-oJVE",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 8 - 'Shaqinahat.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2652",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "i5kDhwMjENQ",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 9 - 'Don't Like Them Go Bang,' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2657",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "J66NOXtNlTs",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 9, Episode 10 - 'Think About The Spirit.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2611",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "_WUDzu5cVCY",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 1 - 'God's haemorrhoid.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2877",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "0z2kdbLcVUU",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 2 - 'A documentary about a despot.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2849",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "n3WTY-7-m0s",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 3 - 'Point of swivel.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2848",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "CIPvCUVrKDk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 4 - 'Toshwash' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2841",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "T2M1tLmkHpg",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 5 - 'I Hate Your Trainers.' | Full Episode | Taskmaster"
+                }
+              ]
+            },
+            "lengthSeconds": "2861",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "MpagMjUtDTg",
+            "title": {
+              "runs": [
+                {
+                  "text": "Season 10, Episode 6 - 'Hippopotamus' | Full Episode |"
+                }
+              ]
+            },
+            "lengthSeconds": "2850",
+            "isPlayable": true
+          }
+        }
+      ],
+      "continuations": [
+        {
+          "nextContinuationData": {
+            "continuation": "taskmaster-page-2"
+          }
+        }
+      ]
+    }
+  }
+}

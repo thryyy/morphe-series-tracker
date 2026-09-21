@@ -1,0 +1,473 @@
+{
+  "responseContext": {
+    "visitorData": "fixture-visitor"
+  },
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "selected": true
+          }
+        }
+      ]
+    }
+  },
+  "continuationContents": {
+    "playlistVideoListContinuation": {
+      "contents": [
+        {
+          "playlistVideoRenderer": {
+            "videoId": "jryvbgRbzZ8",
+            "title": {
+              "runs": [
+                {
+                  "text": "For everything else, there's Moo Moo Milk | Pokemon Grumplocke [21]"
+                }
+              ]
+            },
+            "lengthSeconds": "2947",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "8L2y3ocu58o",
+            "title": {
+              "runs": [
+                {
+                  "text": "Uh oh Arin discovers the SLOTS | Pokemon Grumplocke [22]"
+                }
+              ]
+            },
+            "lengthSeconds": "2918",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "zf1F2Jy8w0o",
+            "title": {
+              "runs": [
+                {
+                  "text": "Fear brings out the worst in people | Pokemon Grumplocke [23]"
+                }
+              ]
+            },
+            "lengthSeconds": "3229",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "P2doRH_4KAM",
+            "title": {
+              "runs": [
+                {
+                  "text": "A Ting who Twings | Pokemon Grumplocke [24]"
+                }
+              ]
+            },
+            "lengthSeconds": "2715",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "kG33OnXWz6k",
+            "title": {
+              "runs": [
+                {
+                  "text": "IT'S HAPPENING!!!! | Pokemon Grumplocke [25]"
+                }
+              ]
+            },
+            "lengthSeconds": "2812",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "g1PRDkVjZcM",
+            "title": {
+              "runs": [
+                {
+                  "text": "Barb's got the JUICE | Pokemon Grumplocke [26]"
+                }
+              ]
+            },
+            "lengthSeconds": "2823",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "8UmlMGb2PJc",
+            "title": {
+              "runs": [
+                {
+                  "text": "He won't lose it all (this time) | Pokemon Grumplocke [27]"
+                }
+              ]
+            },
+            "lengthSeconds": "2843",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "voSDlka77-A",
+            "title": {
+              "runs": [
+                {
+                  "text": "Dan experiences dread at GYM #5*! LETS GOOO!  | Pokemon Grumplocke [28]"
+                }
+              ]
+            },
+            "lengthSeconds": "2824",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "U_oS5pYhTUI",
+            "title": {
+              "runs": [
+                {
+                  "text": "The Silent Hill of the Pokemon World | Pokemon Grumplocke [29]"
+                }
+              ]
+            },
+            "lengthSeconds": "2933",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "fViRpnM1bG0",
+            "title": {
+              "runs": [
+                {
+                  "text": "Podunk Celeste Town | Pokemon Grumplocke [30]"
+                }
+              ]
+            },
+            "lengthSeconds": "3161",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "jtJiYg0yUcU",
+            "title": {
+              "runs": [
+                {
+                  "text": "Beaver Cruisin' | Pokemon Grumplocke [31]"
+                }
+              ]
+            },
+            "lengthSeconds": "2792",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "1ij8jeLSXbM",
+            "title": {
+              "runs": [
+                {
+                  "text": "FEAR IS AN ABBARATION | Pokemon Grumplocke [32]"
+                }
+              ]
+            },
+            "lengthSeconds": "2818",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "1W_Ajos6eUg",
+            "title": {
+              "runs": [
+                {
+                  "text": "🧲 magnet  h i v e m i n d 🧲 | Pokemon Grumplocke [33]"
+                }
+              ]
+            },
+            "lengthSeconds": "2790",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "vxz69dyrEdI",
+            "title": {
+              "runs": [
+                {
+                  "text": "what does hm stand for again? | Pokemon Platinum [34]"
+                }
+              ]
+            },
+            "lengthSeconds": "3141",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "pCjpVf6FCYk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Mike gets a GLOW UP! | Pokemon Grumplocke [35]"
+                }
+              ]
+            },
+            "lengthSeconds": "2829",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "qizGJmFmcvg",
+            "title": {
+              "runs": [
+                {
+                  "text": "We're not STUCK | Pokemon Grumplocke [36]"
+                }
+              ]
+            },
+            "lengthSeconds": "2818",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "SYI3to1MHuM",
+            "title": {
+              "runs": [
+                {
+                  "text": "OBAMASNOW IS HERE! | Pokemon Grumplocke [37]"
+                }
+              ]
+            },
+            "lengthSeconds": "2855",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "vnGK46iCAB0",
+            "title": {
+              "runs": [
+                {
+                  "text": "DID WE GET TROLLED BY THIS GAME? | Pokemon Grumplocke [38]"
+                }
+              ]
+            },
+            "lengthSeconds": "2745",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "lLybk7wNGAo",
+            "title": {
+              "runs": [
+                {
+                  "text": "Is this a metaphor for something? | Pokemon Grumplocke [39]"
+                }
+              ]
+            },
+            "lengthSeconds": "2829",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "w82ptJlN-VM",
+            "title": {
+              "runs": [
+                {
+                  "text": "UH OH UH OH UH OH | Pokemon Grumplocke [40]"
+                }
+              ]
+            },
+            "lengthSeconds": "2753",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "qxydSJmAWtk",
+            "title": {
+              "runs": [
+                {
+                  "text": "OH NO- JUST LIKE BOB?! | Pokemon Grumplocke [41]"
+                }
+              ]
+            },
+            "lengthSeconds": "2833",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "0D6jnXaBjKs",
+            "title": {
+              "runs": [
+                {
+                  "text": "THE CRIT RATE IS OUT OF CONTROL | Pokemon Grumplocke [42]"
+                }
+              ]
+            },
+            "lengthSeconds": "3346",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "_HQgU2FG_ck",
+            "title": {
+              "runs": [
+                {
+                  "text": "HE DIDN'T HAVE TO GO THAT HARD! | Pokemon Grumplocke [43]"
+                }
+              ]
+            },
+            "lengthSeconds": "3169",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "NRyaa8Evriw",
+            "title": {
+              "runs": [
+                {
+                  "text": "\"The most upsetting episode of Game Grumps ever\" | Pokemon Grumplocke [44]"
+                }
+              ]
+            },
+            "lengthSeconds": "3495",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "dYGyUd4ixtU",
+            "title": {
+              "runs": [
+                {
+                  "text": "\"I love all my children equally\" | Pokemon Grumplocke [45]"
+                }
+              ]
+            },
+            "lengthSeconds": "2907",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "NCubCNx_vsk",
+            "title": {
+              "runs": [
+                {
+                  "text": "nuzloke is no freaking joke 😩 | Pokemon Grumplocke [46]"
+                }
+              ]
+            },
+            "lengthSeconds": "2873",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "DrjzVS7FHlE",
+            "title": {
+              "runs": [
+                {
+                  "text": "DAVE THE G-O-A-T | Pokemon Grumplocke [47]"
+                }
+              ]
+            },
+            "lengthSeconds": "2867",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "_3JSAenUgEs",
+            "title": {
+              "runs": [
+                {
+                  "text": "GET PELIPP'D | Pokemon Grumplocke [48]"
+                }
+              ]
+            },
+            "lengthSeconds": "2768",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "IdnKoON7tn8",
+            "title": {
+              "runs": [
+                {
+                  "text": "protect tingtwing at all costs | Pokemon Grumplocke [49]"
+                }
+              ]
+            },
+            "lengthSeconds": "2911",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "DNKy1_3ZAag",
+            "title": {
+              "runs": [
+                {
+                  "text": "uh oh no pp ): | Pokemon Grumplocke [50]"
+                }
+              ]
+            },
+            "lengthSeconds": "3044",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "DmfaTTVt-5o",
+            "title": {
+              "runs": [
+                {
+                  "text": "Graveller: The Two Emotions | Pokemon Grumplocke [51]"
+                }
+              ]
+            },
+            "lengthSeconds": "2837",
+            "isPlayable": true
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "B4QrxY51nps",
+            "title": {
+              "runs": [
+                {
+                  "text": "Check THIS out- | Pokemon Grumplocke [52]"
+                }
+              ]
+            },
+            "lengthSeconds": "2896",
+            "isPlayable": true
+          }
+        }
+      ]
+    }
+  },
+  "onResponseReceivedActions": [
+    {}
+  ]
+}

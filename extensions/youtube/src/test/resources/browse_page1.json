@@ -1,0 +1,324 @@
+{
+  "responseContext": {
+    "visitorData": "fixture-visitor"
+  },
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "selected": true,
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "playlistVideoListRenderer": {
+                      "contents": [
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "4aQu8XID5YE",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "It's HAPPENING: Pokemon GRUMPlocke | Pokemon Platinum"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2903",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "1QbXxw7yX7w",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "A bad time to get emotionally attached | Pokémon Platinum: GRUMPLOCKE [2]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2835",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "_Ti7rqSIVe8",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Risky Gamble with a Good Boy | Pokémon Platinum: GRUMPLOCKE [3]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2902",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "Wf1o4NJohIU",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Planning ahead, presently failing | Pokemon Grumplocke [4]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2744",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "6sNoUAdEGbc",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "We're REALLY serious this time! | Pokemon Grumplocke [5]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2821",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "m5Ttq8EujiU",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "IT'S BECAUSE HE'S SO STRONG | Pokemon Grumplocke [6]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2779",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "9GfHcZP78-Y",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Ready to Roarke! For real! | Pokemon Grumplocke [7]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2679",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "hTp26-6wAN8",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Double Teaming Team Galactic | Pokemon Grumplocke [8]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2733",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "y0Oz3IhKsYg",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "ARIN! LIVES are on the LINE! | Pokemon Grumplocke [9]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "3049",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "RqKaOHU-2eM",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Get. The. Bunny. | Pokemon Grumplocke [10]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2862",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "YfaTMA4CuS8",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "A spoiler by any other name | Pokemon Grumplocke [11]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2833",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "oAOKWKkrjtk",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "His hubris, his ARINGANCE...  | Pokemon Grumplocke [12]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2873",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "nGzTvnZH6kE",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "These are my ladies~ | Pokemon Grumplocke [13]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "3388",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "kyJzqWhrNNE",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "These are REAL GOONS | Pokemon Grumplocke [14]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2977",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "_TG32E0TTYs",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Believe in Joe 🙏 | Pokemon Grumplocke [15]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "3012",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "p4L6aLi1Jww",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "IT'S GIBLE, DUDE! | Pokemon Grumplocke [16]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2864",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "cCX7vg-XL7Y",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Barb the Poffin Queen | Pokemon Grumplocke [17]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2785",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "RqXs176wY_M",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Let's not Slob on Bob | Pokemon Grumplocke [18]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2812",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "D1gzIl9vEYA",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "The Quest for Umbreon | Pokemon Grumplocke [19]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2823",
+                            "isPlayable": true
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "3Qb5f9n1QeE",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Knowing the Unknown | Pokemon Grumplocke [20]"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2796",
+                            "isPlayable": true
+                          }
+                        }
+                      ],
+                      "continuations": [
+                        {
+                          "nextContinuationData": {
+                            "continuation": "fixture-continuation"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "header": {
+    "pageHeaderRenderer": {
+      "pageTitle": "[GRUMPLOCKE] Pokemon Platinum | Game Grumps",
+      "content": {}
+    }
+  },
+  "onResponseReceivedActions": [
+    {}
+  ]
+}

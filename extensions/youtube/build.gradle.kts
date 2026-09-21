@@ -14,9 +14,19 @@ dependencies {
 
     implementation(libs.collections4)
     implementation(libs.protobuf.javalite)
+
+    // Series repository and callback-order regression coverage.
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.json:json:20250517")
+    testImplementation("org.robolectric:robolectric:4.16.1")
+    testImplementation(libs.morphe.extensions.library)
+    testImplementation(project(":extensions:shared:library"))
+    testImplementation(project(":extensions:shared-youtube:library"))
 }
 
 configure<ApplicationExtension> {
+    testOptions.unitTests.isIncludeAndroidResources = true
+
     defaultConfig {
         minSdk = 26
     }

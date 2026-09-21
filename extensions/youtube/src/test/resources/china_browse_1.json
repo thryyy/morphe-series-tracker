@@ -1,0 +1,178 @@
+{
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "selected": true
+          }
+        }
+      ]
+    }
+  },
+  "continuationContents": {
+    "playlistVideoListContinuation": {
+      "contents": [
+        {
+          "playlistVideoRenderer": {
+            "videoId": "yc62qgpbSqI",
+            "title": {
+              "runs": [
+                {
+                  "text": "Living in a Shoebox in China\ud83c\udde8\ud83c\uddf3 (Home Tour)"
+                }
+              ]
+            },
+            "lengthSeconds": "1228",
+            "isPlayable": true,
+            "videoInfo": {
+              "runs": [
+                {
+                  "text": "213K views"
+                },
+                {
+                  "text": " \u2022 "
+                },
+                {
+                  "text": "4 months ago"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "6XIUawS0F78",
+            "title": {
+              "runs": [
+                {
+                  "text": "A Realistic Weekend at 36, Single & Living Alone in China"
+                }
+              ]
+            },
+            "lengthSeconds": "1202",
+            "isPlayable": true,
+            "videoInfo": {
+              "runs": [
+                {
+                  "text": "2M views"
+                },
+                {
+                  "text": " \u2022 "
+                },
+                {
+                  "text": "4 months ago"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "pkBDAGpt-mk",
+            "title": {
+              "runs": [
+                {
+                  "text": "Alone at 1AM\u20134AM in China | A Quiet Night No One Sees"
+                }
+              ]
+            },
+            "lengthSeconds": "1238",
+            "isPlayable": true,
+            "videoInfo": {
+              "runs": [
+                {
+                  "text": "370K views"
+                },
+                {
+                  "text": " \u2022 "
+                },
+                {
+                  "text": "5 months ago"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "Xo9E77ZjXRI",
+            "title": {
+              "runs": [
+                {
+                  "text": "What $3 a Day Gets You in China \ud83c\udde8\ud83c\uddf3 (Yes, in a Big City)"
+                }
+              ]
+            },
+            "lengthSeconds": "1213",
+            "isPlayable": true,
+            "videoInfo": {
+              "runs": [
+                {
+                  "text": "268K views"
+                },
+                {
+                  "text": " \u2022 "
+                },
+                {
+                  "text": "5 months ago"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "I_hTOyE41Ic",
+            "title": {
+              "runs": [
+                {
+                  "text": "How I Live Alone in a 7m\u00b2 Room in China \ud83c\udde8\ud83c\uddf3"
+                }
+              ]
+            },
+            "lengthSeconds": "1416",
+            "isPlayable": true,
+            "videoInfo": {
+              "runs": [
+                {
+                  "text": "382K views"
+                },
+                {
+                  "text": " \u2022 "
+                },
+                {
+                  "text": "5 months ago"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "L5rEC6Z0vcM",
+            "title": {
+              "runs": [
+                {
+                  "text": "[Private video]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "playlistVideoRenderer": {
+            "videoId": "Wcors97O7pA",
+            "title": {
+              "runs": [
+                {
+                  "text": "[Private video]"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
