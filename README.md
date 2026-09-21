@@ -15,7 +15,7 @@ Tested with **21.13.164** and **21.16.256**. **21.38.123** is experimental.
 
 Open **History → Series**. Follow a playlist with **+** or the player’s Series button. Tap a thumbnail to continue; tap the title to see its episodes.
 
-Recording is off by default. Enable it in Series Tracker settings. **Use YouTube progress** can pick up progress from another device; your followed-series list stays on this phone.
+Recording is off by default. Enable it under **Morphe → General → Series Tracker**. **Use YouTube progress** can pick up progress from another device; your followed-series list stays on this phone.
 
 The local library is shared across YouTube accounts. YouTube’s pause/clear-history controls do not clear it. Use **Series → More → Clear all local progress**. There is no library export yet.
 

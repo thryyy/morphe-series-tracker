@@ -85,7 +85,7 @@ val seriesTrackerPatch =
             fun preference(key: String, title: String, summary: String?, tag: String) =
                 object :
                     BasePreference(key = key, titleKey = title, summaryKey = summary, tag = tag) {}
-            PreferenceScreen.VIDEO.addPreferences(
+            PreferenceScreen.GENERAL.addPreferences(
                 PreferenceScreenPreference(
                     key = "series_tracker_screen",
                     titleKey = "series_tracker_title",
