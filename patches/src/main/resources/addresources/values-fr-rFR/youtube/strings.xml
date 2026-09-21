@@ -1290,6 +1290,7 @@ Limitation : Rétablit l'ancien style d'overlay 'Plus de vidéos'"</string>
 
     <!-- video.series.seriesTrackerPatch -->
     <string name="series_tracker_title">Series Tracker</string>
+    <string name="series_tracker_summary">Suivre des playlists comme des séries et reprendre où vous en étiez</string>
     <string name="series_tracker_show_button_title">Afficher le bouton Series Tracker</string>
     <string name="series_tracker_show_button_summary">Redémarrez YouTube après avoir modifié ce paramètre</string>
     <string name="series_tracker_record_title">"Enregistrer la progression des séries suivies"</string>

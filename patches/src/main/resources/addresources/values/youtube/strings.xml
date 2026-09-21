@@ -1421,6 +1421,7 @@ Limitation: Reverts to old style \'More videos\' overlay"</string>
 
     <!-- video.series.seriesTrackerPatch -->
     <string name="series_tracker_title">Series Tracker</string>
+    <string name="series_tracker_summary">Follow playlists as series and keep your place</string>
     <string name="series_tracker_show_button_title">Show Series Tracker button</string>
     <string name="series_tracker_show_button_summary">Restart YouTube after changing this setting</string>
     <string name="series_tracker_record_title">"Record followed-series progress"</string>

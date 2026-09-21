@@ -89,7 +89,7 @@ val seriesTrackerPatch =
                 PreferenceScreenPreference(
                     key = "series_tracker_screen",
                     titleKey = "series_tracker_title",
-                    summaryKey = null,
+                    summaryKey = "series_tracker_summary",
                     sorting = PreferenceScreenPreference.Sorting.UNSORTED,
                     preferences =
                         linkedSetOf(
