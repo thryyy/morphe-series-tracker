@@ -1423,8 +1423,6 @@ Limitation: Reverts to old style \'More videos\' overlay"</string>
     <string name="series_tracker_title">Series Tracker</string>
     <string name="series_tracker_show_button_title">Show Series Tracker button</string>
     <string name="series_tracker_show_button_summary">Restart YouTube after changing this setting</string>
-    <string name="series_tracker_library_title">Open series library</string>
-    <string name="series_tracker_library_summary">Save playlists, choose episodes and resume playback</string>
     <string name="series_tracker_record_title">"Record followed-series progress"</string>
     <string name="series_tracker_record_summary">"Record playback on this phone for saved series and bookmarks. Off by default. Use YouTube progress separately to read progress from other devices."</string>
     <string name="series_tracker_history_tab_title">Show History in navigation bar</string>

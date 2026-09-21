@@ -1,8 +1,10 @@
 # Validation
 
-The Series feature was tested on a Pixel 10 Pro running Android 17, using YouTube 21.16.256 first and 21.38.123 second. Earlier checks cover 21.13.164.
+The Series feature was tested on a Pixel 10 Pro running Android 17 with YouTube 21.13.164, 21.16.256 and experimental 21.38.123.
 
-The checks covered History/Series navigation, retained playlists and positions, episode lists, resume playback, the player shortcut, manual watched/unwatched state, settings and persistence after restart. The device remained in English while the phone system language was French.
+The checks covered History/Series navigation, retained playlists and positions, episode lists, resume playback, the player shortcut, manual watched/unwatched state, settings and persistence after restart. YouTube was set to English while the phone system language was French.
+
+The redundant settings shortcut was removed after the minimum-version smoke test. That cleanup was rechecked on 21.16.256.
 
 147 extension tests and 2 resource tests cover storage, progress, privacy rules, request ownership and UI state. APK checks verify the injected playback, account and History bridges. Native History matching is also checked against renamed bytecode and rejected when required members are missing or ambiguous.
 

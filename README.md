@@ -13,7 +13,7 @@ Tested with **21.13.164** and **21.16.256**. **21.38.123** is experimental.
 
 ## Use
 
-Open **History → Series**, or **Settings → Morphe → Video → Series Tracker → Open series library**. Follow a playlist with **+** or the player’s Series button. Tap a thumbnail to continue; tap the title to see its episodes.
+Open **History → Series**. Follow a playlist with **+** or the player’s Series button. Tap a thumbnail to continue; tap the title to see its episodes.
 
 Recording is off by default. Enable it in Series Tracker settings. **Use YouTube progress** can pick up progress from another device; your followed-series list stays on this phone.
 

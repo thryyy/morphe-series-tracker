@@ -77,10 +77,6 @@ final class LibraryDialog {
                 public void onActivitySaveInstanceState(Activity a, Bundle b) {}
             };
 
-    static void show(Context context) {
-        HistoryUi.open(context);
-    }
-
     static LibraryDialog embedded(Activity activity) {
         return new LibraryDialog(activity);
     }

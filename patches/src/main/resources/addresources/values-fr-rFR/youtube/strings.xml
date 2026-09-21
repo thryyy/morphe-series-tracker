@@ -1292,8 +1292,6 @@ Limitation : Rétablit l'ancien style d'overlay 'Plus de vidéos'"</string>
     <string name="series_tracker_title">Series Tracker</string>
     <string name="series_tracker_show_button_title">Afficher le bouton Series Tracker</string>
     <string name="series_tracker_show_button_summary">Redémarrez YouTube après avoir modifié ce paramètre</string>
-    <string name="series_tracker_library_title">Ouvrir mes séries</string>
-    <string name="series_tracker_library_summary">Retrouvez vos séries dans Historique et reprenez votre lecture</string>
     <string name="series_tracker_record_title">"Enregistrer la progression des séries suivies"</string>
     <string name="series_tracker_record_summary">"Enregistrer la lecture sur ce téléphone pour les séries et vidéos enregistrées. Désactivé par défaut. Activez séparément la progression YouTube pour lire celle des autres appareils."</string>
     <string name="series_tracker_history_tab_title">Afficher Historique dans la barre de navigation</string>

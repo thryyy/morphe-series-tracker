@@ -94,12 +94,6 @@ val seriesTrackerPatch =
                     preferences =
                         linkedSetOf(
                             preference(
-                                "series_tracker_library",
-                                "series_tracker_library_title",
-                                "series_tracker_library_summary",
-                                "$EXTENSION_PACKAGE.SeriesTrackerPreference",
-                            ),
-                            preference(
                                 "series_tracker_show_history_tab",
                                 "series_tracker_history_tab_title",
                                 "series_tracker_history_tab_summary",
