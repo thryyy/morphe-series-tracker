@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-09-21T10:43:41",
-  "description": "## [0.1.0](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.0.0...series-v0.1.0) (2026-09-21)\n\n### New Features\n\n* **YouTube - Series tracking:** Follow playlists and resume episodes ([b931c98](https://github.com/thryyy/morphe-series-tracker/commit/b931c98de080ff5debd8bea37d78d3df22799dd3))\n",
-  "download_url": "https://github.com/thryyy/morphe-series-tracker/releases/download/series-v0.1.0/patches-0.1.0.mpp",
+  "created_at": "2026-09-21T11:53:56",
+  "description": "## [0.1.1](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.1.0...series-v0.1.1) (2026-09-21)\n\n### Bug Fixes\n\n* **YouTube:** Remove redundant Series library shortcut ([73daff2](https://github.com/thryyy/morphe-series-tracker/commit/73daff2a8d112098dc43bc42274b697ac701e9f6))\n",
+  "download_url": "https://github.com/thryyy/morphe-series-tracker/releases/download/series-v0.1.1/patches-0.1.1.mpp",
   "signature_download_url": "",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
