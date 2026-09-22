@@ -2,7 +2,7 @@
 
 Follow YouTube playlists as series. Keep your place, see new episodes and resume where you left off.
 
-This is an unofficial Morphe patch source. It includes Morphe’s patches plus **Series tracking**, so you can apply both in one run.
+This is an unofficial Morphe patch source based on **Morphe 1.44.0 stable**. It includes Morphe’s patches plus **Series tracking**, so you can apply both in one run.
 
 ## Install
 

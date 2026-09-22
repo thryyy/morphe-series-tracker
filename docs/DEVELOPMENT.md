@@ -16,6 +16,12 @@ Set `ANDROID_HOME` or an ignored `local.properties` with `sdk.dir`. Use JDK 21 a
 
 Update `config/toolchain-lock.json` when changing build inputs; record the source revision and verify each download’s SHA-256. Check supported YouTube targets against real APKs before adding them.
 
+## Upstream base
+
+The release source includes Morphe **1.44.0 stable** (`92dd0ef86`).
+Merge stable upstream tags into `main`, preserving the Series release metadata and
+version sequence. The upstream PR follows `upstream/dev` independently.
+
 ## Releases
 
 The release workflow follows Morphe’s semantic-release setup. Work on `dev` and dispatch the Release workflow there for preview releases. Merging into `main` publishes stable releases automatically. `feat:` creates a minor release, `fix:` a patch release. Tags use the separate `series-v` prefix.

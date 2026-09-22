@@ -10,4 +10,15 @@ The redundant settings shortcut was removed and Series Tracker was moved into Ge
 
 21.38.123 remains experimental. This is not exhaustive device coverage: real cross-device synchronization, account/incognito transitions, long background playback and fresh-install onboarding still need dedicated testing.
 
-Upstream base for this distribution: `9523afa92` (21 September 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
+Upstream base for this distribution: Morphe **1.44.0 stable**, `92dd0ef86` (21 September 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
+
+## Morphe 1.44.0 update — 22 September 2026
+
+The stable merge passes the Android bundle build, string validation and all 149
+regression tests. Full patching of YouTube 21.16.256 succeeds for both the stable
+source and the updated upstream PR branch (based on dev `b20648b12`). The player
+shortcut uses the upper control row in both player styles, with a stacked-episodes
+icon and the existing Series settings toggle.
+
+No new physical-device test was performed for this merge or shortcut relocation;
+the device coverage above describes the earlier implementation.
