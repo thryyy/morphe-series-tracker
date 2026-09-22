@@ -1,3 +1,11 @@
+## [0.1.2](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.1.1...series-v0.1.2) (2026-09-22)
+
+### Bug Fixes
+
+* **YouTube:** Describe Series Tracker in settings ([d6f6283](https://github.com/thryyy/morphe-series-tracker/commit/d6f628344a9ea29b9c65211549d1c6897fa99fdc))
+* **YouTube:** Move Series shortcut to top player controls ([97436b0](https://github.com/thryyy/morphe-series-tracker/commit/97436b00a0edc101b48da9d46a4ce543ae1f7511))
+* **YouTube:** Move Series Tracker settings to General ([143d220](https://github.com/thryyy/morphe-series-tracker/commit/143d2204e12da3e5c9d5486e232c9476e27d261d))
+
 ## [0.1.1](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.1.0...series-v0.1.1) (2026-09-21)
 
 ### Bug Fixes

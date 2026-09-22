@@ -1,7 +1,7 @@
 # Included patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v0.1.1](https://github.com/thryyy/morphe-series-tracker/releases/tag/v0.1.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;150 patches total
+> **[v0.1.2](https://github.com/thryyy/morphe-series-tracker/releases/tag/v0.1.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;150 patches total
 <details open>
 <summary>📦 YouTube&nbsp;&nbsp;•&nbsp;&nbsp;85 patches</summary>
 <br>
