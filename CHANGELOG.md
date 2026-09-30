@@ -1,3 +1,9 @@
+## [0.3.1](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.3.0...series-v0.3.1) (2026-09-30)
+
+### Bug Fixes
+
+* **YouTube:** Exclude scheduled premieres from available Series episodes ([64ae60d](https://github.com/thryyy/morphe-series-tracker/commit/64ae60db105e09b0bde0177e03f369f1d1af31a3))
+
 ## [0.3.0](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.2.0...series-v0.3.0) (2026-09-30)
 
 ### Bug Fixes
