@@ -17,6 +17,44 @@ public class CatalogTest {
     }
 
     @Test
+    public void scheduledPremiereIsNotAvailableEvenWithPlayableFlagAndDuration() throws Exception {
+        CatalogParser.Page page = CatalogParser.parse(fixture("taskmaster_premiere.json"), 0, false);
+        assertEquals(5, page.episodes.size());
+        for (int i = 0; i < 4; i++) assertTrue(page.episodes.get(i).available);
+        TrackerModels.Episode premiere = page.episodes.get(4);
+        assertEquals("lBX2XdRsl1k", premiere.videoId);
+        assertEquals(5, premiere.ordinal);
+        assertEquals(2751000, premiere.durationMs);
+        assertFalse(premiere.available);
+    }
+
+    @Test
+    public void premiereMarkersWorkIndependentlyWithoutDependingOnLocaleOrClock() throws Exception {
+        JSONObject video = new JSONObject()
+                .put("videoId", "aaaaaaaaaaa")
+                .put("isPlayable", true)
+                .put("upcomingEventData", new JSONObject().put("startTime", "1"));
+        assertFalse(parseVideo(video).available);
+        video.remove("upcomingEventData");
+        JSONObject overlay = new JSONObject().put("style", "UPCOMING")
+                .put("text", new JSONObject().put("simpleText", "À venir"));
+        video.put("thumbnailOverlays", new JSONArray()
+                .put(new JSONObject().put("thumbnailOverlayTimeStatusRenderer", overlay)));
+        assertFalse(parseVideo(video).available);
+        overlay.put("style", "LIVE");
+        assertTrue(parseVideo(video).available);
+        video.remove("thumbnailOverlays");
+        assertTrue(parseVideo(video).available);
+    }
+
+    private static TrackerModels.Episode parseVideo(JSONObject video) throws Exception {
+        JSONObject root = new JSONObject().put("continuationContents", new JSONObject()
+                .put("playlistVideoListContinuation", new JSONObject().put("contents",
+                        new JSONArray().put(new JSONObject().put("playlistVideoRenderer", video)))));
+        return CatalogParser.parse(root.toString(), 0, true).episodes.get(0);
+    }
+
+    @Test
     public void capturedPagesProduce52OrderedEpisodes() throws Exception {
         CatalogParser.Page first = CatalogParser.parse(fixture("browse_page1.json"), 0, false);
         CatalogParser.Page next =

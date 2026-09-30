@@ -566,6 +566,40 @@ public class TrackerRepositoryTest {
     }
 
     @Test
+    public void premiereRefreshRepairsOldBadgeAndCountsOnlyWhenReleased() throws Exception {
+        List<Episode> scheduled = CatalogParser.parse(
+                CatalogTest.fixture("taskmaster_premiere.json"), 0, false).episodes;
+        db.saveSeries("PLone", "Taskmaster", "",
+                new CatalogClient.Catalog("Taskmaster", scheduled.subList(0, 4)), 1);
+        for (Episode episode : scheduled.subList(0, 4))
+            db.mark(episode.videoId, TrackerModels.Override.WATCHED, 2);
+        Episode premiere = scheduled.get(4);
+        List<Episode> released = new ArrayList<>(scheduled);
+        released.set(4, new Episode(premiere.ordinal, premiere.videoId, premiere.title,
+                premiere.durationMs, true));
+        // Reproduce a badge cached by the old parser, which ignored premiere metadata.
+        db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", released), 3);
+        assertEquals(1, db.series("PLone").newEpisodeCount);
+        db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", scheduled), 4);
+        assertEquals(0, db.series("PLone").newEpisodeCount);
+        assertEquals(5, db.series("PLone").episodes.size());
+        assertEquals(4, db.series("PLone").playableCount());
+        assertEquals(ResumePlanner.Kind.CAUGHT_UP, ResumePlanner.plan(db.series("PLone")).kind);
+        db.close();
+        db = new TrackerRepository(context, file);
+        assertEquals(0, db.series("PLone").newEpisodeCount);
+        assertEquals(4, db.series("PLone").watchedCount());
+        db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", released), 5);
+        assertEquals(1, db.series("PLone").newEpisodeCount);
+        assertEquals(premiere.videoId, ResumePlanner.plan(db.series("PLone")).videoId);
+        db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", released), 6);
+        assertEquals(1, db.series("PLone").newEpisodeCount);
+        db.acknowledgeEpisodes("PLone");
+        db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", released), 7);
+        assertEquals(0, db.series("PLone").newEpisodeCount);
+    }
+
+    @Test
     public void quietRefreshCountsOnlyNewAvailableVideosAndAcknowledgesDurably() {
         db.saveSeries("PLone", "One", "", catalog("aaaaaaaaaaa", "bbbbbbbbbbb"), 1);
         assertEquals(0, db.series("PLone").newEpisodeCount);

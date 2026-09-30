@@ -1,0 +1,230 @@
+{
+  "contents": {
+    "singleColumnBrowseResultsRenderer": {
+      "tabs": [
+        {
+          "tabRenderer": {
+            "selected": true,
+            "content": {
+              "sectionListRenderer": {
+                "contents": [
+                  {
+                    "playlistVideoListRenderer": {
+                      "contents": [
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "w-pNR-MeIDc",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Taskmaster Season 22, Episode 1 - 'In my mind there\u2019s a river.' | Full Episode"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2813",
+                            "isPlayable": true,
+                            "thumbnailOverlays": [
+                              {
+                                "thumbnailOverlayTimeStatusRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "46:53"
+                                      }
+                                    ]
+                                  },
+                                  "style": "DEFAULT"
+                                }
+                              }
+                            ],
+                            "videoInfo": {
+                              "runs": [
+                                {
+                                  "text": "2.8M views"
+                                },
+                                {
+                                  "text": " \u2022 "
+                                },
+                                {
+                                  "text": "3 weeks ago"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "ASzE5CuYNks",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Taskmaster Season 22, Episode 2 - 'This is food glue.' | Full Episode"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2795",
+                            "isPlayable": true,
+                            "thumbnailOverlays": [
+                              {
+                                "thumbnailOverlayTimeStatusRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "46:35"
+                                      }
+                                    ]
+                                  },
+                                  "style": "DEFAULT"
+                                }
+                              }
+                            ],
+                            "videoInfo": {
+                              "runs": [
+                                {
+                                  "text": "1.7M views"
+                                },
+                                {
+                                  "text": " \u2022 "
+                                },
+                                {
+                                  "text": "2 weeks ago"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "S-iwuKrQP6A",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Taskmaster Season 22, Episode 3 - 'The butterfly centurion.' | Full Episode"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2749",
+                            "isPlayable": true,
+                            "thumbnailOverlays": [
+                              {
+                                "thumbnailOverlayTimeStatusRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "45:49"
+                                      }
+                                    ]
+                                  },
+                                  "style": "DEFAULT"
+                                }
+                              }
+                            ],
+                            "videoInfo": {
+                              "runs": [
+                                {
+                                  "text": "1.5M views"
+                                },
+                                {
+                                  "text": " \u2022 "
+                                },
+                                {
+                                  "text": "13 days ago"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "RUh8D2Hau2o",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Taskmaster Season 22, Episode 4 - 'An act of self-erasure.' | Full Episode"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2768",
+                            "isPlayable": true,
+                            "thumbnailOverlays": [
+                              {
+                                "thumbnailOverlayTimeStatusRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "46:08"
+                                      }
+                                    ]
+                                  },
+                                  "style": "DEFAULT"
+                                }
+                              }
+                            ],
+                            "videoInfo": {
+                              "runs": [
+                                {
+                                  "text": "1.2M views"
+                                },
+                                {
+                                  "text": " \u2022 "
+                                },
+                                {
+                                  "text": "6 days ago"
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "playlistVideoRenderer": {
+                            "videoId": "lBX2XdRsl1k",
+                            "title": {
+                              "runs": [
+                                {
+                                  "text": "Taskmaster Season 22, Episode 5 - 'To void and oblong.' | Full Episode"
+                                }
+                              ]
+                            },
+                            "lengthSeconds": "2751",
+                            "isPlayable": true,
+                            "thumbnailOverlays": [
+                              {
+                                "thumbnailOverlayTimeStatusRenderer": {
+                                  "text": {
+                                    "runs": [
+                                      {
+                                        "text": "Upcoming"
+                                      }
+                                    ]
+                                  },
+                                  "style": "UPCOMING"
+                                }
+                              }
+                            ],
+                            "upcomingEventData": {
+                              "startTime": "1790888400"
+                            },
+                            "videoInfo": {
+                              "runs": [
+                                {
+                                  "text": "136"
+                                },
+                                {
+                                  "text": " waiting"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

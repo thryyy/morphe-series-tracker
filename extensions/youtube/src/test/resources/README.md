@@ -37,3 +37,11 @@ relative ages captured in that response. Private entries have no statistics.
 
 The China fixtures also retain their captured public videoInfo ages and view
 counts to validate automatic direction inference without new network requests.
+
+`taskmaster_premiere.json` is a reduced Android browse response captured on
+2026-09-30 for PLFVQxZZUqPnA (Taskmaster Season 22). It retains four released
+episodes and episode 5 (`lBX2XdRsl1k`), which had `isPlayable: true` and a duration
+but also `upcomingEventData` and an `UPCOMING` thumbnail overlay. Tracking,
+visitor data, menus and unrelated response fields are omitted. Regression tests
+also exercise each premiere marker independently and the scheduled-to-released
+transition, including repair of an existing false new-episode badge.
