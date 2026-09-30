@@ -18,9 +18,12 @@ Update `config/toolchain-lock.json` when changing build inputs; record the sourc
 
 ## Upstream base
 
-The release source includes Morphe **1.44.0 stable** (`92dd0ef86`).
-Merge stable upstream tags into `main`, preserving the Series release metadata and
-version sequence. The upstream PR follows `upstream/dev` independently.
+The source and upstream PR include Morphe **1.45.0-dev.21** and subsequent
+`dev` changes through `444bb0dc1` (30 September 2026). Both now follow the
+preview/development channel. Preserve the separate Series release metadata and
+version sequence when merging upstream; a Series stable tag does not imply a
+stable Morphe base. Build inputs use the upstream-declared patch library
+**1.8.0-dev.1**, Patcher **1.14.0** and Gradle plugin **1.3.4**.
 
 ## Releases
 

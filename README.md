@@ -2,14 +2,14 @@
 
 Follow YouTube playlists as series. Keep your place, see new episodes and resume where you left off.
 
-This is an unofficial Morphe patch source based on **Morphe 1.44.0 stable**. It includes Morphe’s patches plus **Series tracking**, so you can apply both in one run.
+This is an unofficial Morphe patch source based on **Morphe 1.45.0-dev.21 plus subsequent dev changes**. It includes Morphe’s patches plus **Series tracking**, so you can apply both in one run.
 
 ## Install
 
 [Add to Morphe](https://morphe.software/add-source?github=thryyy%2Fmorphe-series-tracker).
 Choose this source for YouTube and keep **Series tracking** selected. Use an original YouTube APK; don’t combine this bundle with the official source in the same patch run.
 
-Tested with **21.13.164** and **21.16.256**. **21.38.123** is experimental.
+Automated patching is verified with **21.13.164**, **21.16.256** and experimental **21.38.123**. Device testing predates this upstream update. Newer upstream targets are not yet declared compatible with Series tracking.
 
 ## Use
 

@@ -17,15 +17,15 @@
   ],
   "artifacts": [
     {
-      "name": "morphe-patches-library-1.7.1-dev.1.jar",
-      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.7.1-dev.1/morphe-patches-library-1.7.1-dev.1.jar",
-      "sha256": "a562df0b1a81a799e09399d3fe72e6bb3a8ecbfd035a9f94e71fd46063c8e0dc",
+      "name": "morphe-patches-library-1.8.0-dev.1.jar",
+      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.8.0-dev.1/morphe-patches-library-1.8.0-dev.1.jar",
+      "sha256": "7f17ab3893d5f0b3da932d9e5ad63ca8114a3bcf59f751195ff4f999e2fefd82",
       "purpose": "build"
     },
     {
-      "name": "morphe-extensions-library-1.7.1-dev.1.aar",
-      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.7.1-dev.1/morphe-extensions-library-release.aar",
-      "sha256": "994607eaa009ffbeeef1e135c0865d9c5054d8593b7185a4a49508e8218630ea",
+      "name": "morphe-extensions-library-1.8.0-dev.1.aar",
+      "url": "https://github.com/MorpheApp/morphe-patches-library/releases/download/v1.8.0-dev.1/morphe-extensions-library-release.aar",
+      "sha256": "50d7427535d2deb8ee7905aa223a6c45d19d408561617b2d58e0048d55775d57",
       "purpose": "build"
     },
     {

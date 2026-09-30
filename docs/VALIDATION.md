@@ -10,7 +10,8 @@ The redundant settings shortcut was removed and Series Tracker was moved into Ge
 
 21.38.123 remains experimental. This is not exhaustive device coverage: real cross-device synchronization, account/incognito transitions, long background playback and fresh-install onboarding still need dedicated testing.
 
-Upstream base for this distribution: Morphe **1.44.0 stable**, `92dd0ef86` (21 September 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
+Current upstream base: Morphe **1.45.0-dev.21** plus three development commits,
+through `444bb0dc1` (30 September 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
 
 ## Morphe 1.44.0 update — 22 September 2026
 
@@ -22,3 +23,27 @@ icon and the existing Series settings toggle.
 
 No new physical-device test was performed for this merge or shortcut relocation;
 the device coverage above describes the earlier implementation.
+
+## Morphe preview update — 30 September 2026
+
+The fork and PR #3114 share identical production Java, Kotlin and resources on
+upstream `444bb0dc1`. The merge preserves both Series translations and upstream's
+new player-icon strings. Patch/extension library pins are now 1.8.0-dev.1;
+Patcher remains 1.14.0. Protobuf follows upstream 4.36.2.
+
+The fingerprint refactor requested during upstream review is now also in this
+fork. The host verifier runs fingerprints inside a real Patcher context and
+compares them with the previous matcher on original and renamed bytecode. It
+rejects ambiguous factories/dispatch overloads, incorrect allocation types,
+mismatched null-argument registers and missing required contracts.
+
+The bundle build and 84,179-string validation pass. All 149 Series tests pass
+without skips; four upstream Jam tests pass, while five APK-dependent Jam tests
+are skipped because no YouTube Music APK was provided. Release metadata tests
+pass. Full PR-bundle patching applies 90 patches successfully on YouTube
+21.13.164, 21.16.256 and experimental 21.38.123. Inspection checks unique DEX
+classes, playback/privacy/History wiring and the shared player top-control hook.
+
+No physical-device installation or new cross-device/account/incognito check was
+performed for this update. Upstream now offers additional experimental YouTube
+targets, but Series support remains limited to the three verified versions.

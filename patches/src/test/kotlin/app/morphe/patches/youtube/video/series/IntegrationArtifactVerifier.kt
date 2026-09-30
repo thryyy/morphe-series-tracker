@@ -47,6 +47,16 @@ fun main(args: Array<String>) {
                 (it as? ReferenceInstruction)?.reference as? MethodReference
             }
             .orEmpty()
+    val playerButton = "${OUR_PREFIX}SeriesPlayerButton;"
+    val topButton = classes.single { it.type == playerButton }
+    val initialize = topButton.methods.single { it.name == "initializeLegacyButton" }
+    check(initialize.parameterTypes == listOf("Landroid/view/View;"))
+    check(classes.asSequence().filter { it.type != playerButton }.flatMap { it.methods.asSequence() }
+        .any { method -> method.calls().any {
+            it.definingClass == playerButton && it.name == initialize.name &&
+                it.parameterTypes == initialize.parameterTypes
+        } }) { "Series player button is not connected to the shared top-control hook" }
+
     val controller = classes.single { "${OUR_PREFIX}PlaybackBridge\$Source;" in it.interfaces }
     listOf("seriesTrackerVideoId" to "Ljava/lang/String;", "seriesTrackerPosition" to "J")
         .forEach { (name, type) ->
@@ -178,6 +188,6 @@ fun main(args: Array<String>) {
             .any { it.name == "getSerializedSize" }
     )
     println(
-        "PASS: ${classes.size} unique classes; ${own.size} Series classes; direct playback hooks, controller, session, privacy and native History bridges; no per-video metadata sync, standalone extension or probes"
+        "PASS: ${classes.size} unique classes; ${own.size} Series classes; player top-control hook, direct playback hooks, controller, session, privacy and native History bridges; no per-video metadata sync, standalone extension or probes"
     )
 }
