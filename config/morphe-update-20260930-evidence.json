@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-09-30",
+  "release": "v1.45.0-dev.21",
+  "upstream_base": "444bb0dc18f33f56083ab9274a1d86b574fba1b4",
+  "pr": "https://github.com/MorpheApp/morphe-patches/pull/3114",
+  "pr_head": "10fb1c3f4677b2e7cf85680b827877a683fa7ff4",
+  "fork_source_commit": "a946edd525b9d0288f8be7515504ae5cb9f9317a",
+  "series_tests": 149,
+  "series_test_failures": 0,
+  "series_test_skips": 0,
+  "upstream_jam_tests_passed": 4,
+  "upstream_jam_tests_skipped": 5,
+  "strings_checked": 84179,
+  "device_tested_this_update": false,
+  "production_sources_match": true,
+  "patch_runs": {
+    "minimum": {
+      "version": "21.13.164",
+      "applied": 90,
+      "failed": [],
+      "steps": [
+        {
+          "step": "PATCHING",
+          "success": true
+        },
+        {
+          "step": "REBUILDING",
+          "success": true
+        }
+      ]
+    },
+    "stable": {
+      "version": "21.16.256",
+      "applied": 90,
+      "failed": [],
+      "steps": [
+        {
+          "step": "PATCHING",
+          "success": true
+        },
+        {
+          "step": "REBUILDING",
+          "success": true
+        }
+      ]
+    },
+    "experimental": {
+      "version": "21.38.123",
+      "applied": 1,
+      "failed": [],
+      "steps": [
+        {
+          "step": "PATCHING",
+          "success": true
+        },
+        {
+          "step": "REBUILDING",
+          "success": true
+        }
+      ]
+    },
+    "fork": {
+      "version": "21.16.256",
+      "applied": 90,
+      "failed": [],
+      "steps": [
+        {
+          "step": "PATCHING",
+          "success": true
+        },
+        {
+          "step": "REBUILDING",
+          "success": true
+        }
+      ]
+    }
+  },
+  "sha256": {
+    "probe.mpp": "8d70ae25ed9a682f0f22cc67797546252558bac781b8a7d05679f084fad3d55b",
+    "fork.mpp": "3147861f9b0e71970aadb73f2862b3ce2b60666de248b4692167c6bedb5e144b",
+    "minimum.apk": "01f9aa146b596d8bf128db2b3debb597a91a38c659b4c463c7be9bd1efc4ac56",
+    "stable.apk": "608ece151028d68b889ee182b6c847752cdd7244fd512b8557b82772dd061620",
+    "experimental.apk": "4d1da99f93e72813d15169f820fd590f4632232ff4c0676319d34761e6f4eba1",
+    "fork.apk": "4eb946dde1a85351c8b4291eb37ea4eeb2dfeb61a9612727511e6518df2cef50"
+  }
+}

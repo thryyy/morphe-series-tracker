@@ -44,6 +44,10 @@ pass. Full PR-bundle patching applies 90 patches successfully on YouTube
 21.13.164, 21.16.256 and experimental 21.38.123. Inspection checks unique DEX
 classes, playback/privacy/History wiring and the shared player top-control hook.
 
+The fork bundle also passes full 90-patch rebuilding and APK inspection on
+21.16.256. Exact source/artifact hashes are recorded in
+[`config/morphe-update-20260930-evidence.json`](../config/morphe-update-20260930-evidence.json).
+
 No physical-device installation or new cross-device/account/incognito check was
 performed for this update. Upstream now offers additional experimental YouTube
 targets, but Series support remains limited to the three verified versions.
