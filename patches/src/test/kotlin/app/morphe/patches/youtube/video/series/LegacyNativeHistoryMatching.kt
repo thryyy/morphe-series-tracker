@@ -1,21 +1,15 @@
 package app.morphe.patches.youtube.video.series
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
-import app.morphe.patcher.extensions.InstructionExtensions.instructionsOrNull
+import app.morphe.patcher.literal
 import app.morphe.patcher.methodCall
-import app.morphe.patcher.newInstance
-import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.patch.PatchException
-import app.morphe.util.findInstructionIndicesReversed
-import app.morphe.util.getReference
-import app.morphe.util.indexOfFirstInstruction
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.ClassDef
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.Instruction
 import com.android.tools.smali.dexlib2.iface.instruction.NarrowLiteralInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -24,23 +18,9 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
-internal data class NativeHistoryContract(
-    val service: ClassDef,
-    val request: ClassDef,
-    val factory: Method,
-    val capture: Method,
-    val dispatch: Method,
-    val genericDispatch: Method,
-    val routeSetter: Method,
-    val continuationSetter: Method,
-    val identity: Method,
-    val route: FieldReference,
-    val continuation: FieldReference,
-    val clickTracking: FieldReference,
-    val payload: FieldReference,
-)
-
 private const val STRING = "Ljava/lang/String;"
+private const val EXECUTOR = "Ljava/util/concurrent/Executor;"
+private const val FUTURE = "Lcom/google/common/util/concurrent/ListenableFuture;"
 
 private fun isProtobufMessage(type: String, lookup: (String) -> ClassDef?): Boolean {
     val visited = mutableSetOf<String>()
@@ -57,24 +37,24 @@ private fun <T> Iterable<T>.unique(role: String): T =
     singleOrNull()
         ?: throw PatchException("Series Tracker: native History $role is missing or ambiguous")
 
-// A nullable context is safe only when the host passes null in the factory's argument register.
-private fun Method.passesNullTo(factory: MethodReference): Boolean =
-    findInstructionIndicesReversed(methodCall(factory)).any { index ->
-        if (index == 0) false
-        else {
-            val value = getInstruction<Instruction>(index - 1)
-            val call = getInstruction<Instruction>(index)
-            value.opcode == Opcode.CONST_4 &&
-                (value as? NarrowLiteralInstruction)?.narrowLiteral == 0 &&
-                call.opcode == Opcode.INVOKE_VIRTUAL &&
-                (call as? FiveRegisterInstruction)?.registerCount == 2 &&
-                call.registerD == (value as? OneRegisterInstruction)?.registerA
-        }
+private fun Method.instructions() = implementation?.instructions?.toList().orEmpty()
+
+private inline fun <reified T> Method.references() =
+    instructions().mapNotNull {
+        (it as? ReferenceInstruction)?.reference as? T
     }
 
+private fun Method.hasString(value: String) =
+    references<StringReference>().any { it.string == value }
+
+private fun Method.hasShape(args: List<String>, result: String) =
+    parameterTypes.map(CharSequence::toString) == args &&
+        returnType == result &&
+        AccessFlags.PUBLIC.isSet(accessFlags) &&
+        !AccessFlags.STATIC.isSet(accessFlags)
+
 /** Resolve the native contract from strings, signatures, inheritance and call relationships. */
-context(context: BytecodePatchContext)
-internal fun resolveNativeHistory(
+internal fun resolveLegacyNativeHistory(
     service: ClassDef,
     responseAccessors: List<Method>,
     endpointRegistration: Method,
@@ -82,14 +62,19 @@ internal fun resolveNativeHistory(
     lookup: (String) -> ClassDef,
 ): NativeHistoryContract {
     val capture =
-        NativeAccountRequestFingerprint(accountType)
-            .matchAll(service)
-            .filter { match ->
-                val method = match.originalMethod
-                method.indexOfFirstInstruction(newInstance(type = method.returnType)) >= 0
+        service.methods
+            .filter {
+                it.parameterTypes.size == 3 &&
+                    it.parameterTypes[1] == accountType &&
+                    it.parameterTypes.last() == STRING &&
+                    it.returnType.startsWith("L") &&
+                    it.instructions().any { instruction ->
+                        instruction.opcode == Opcode.NEW_INSTANCE &&
+                            ((instruction as? ReferenceInstruction)?.reference as? TypeReference)
+                                ?.type == it.returnType
+                    }
             }
-            .unique("account request capture")
-            .originalMethod
+            .unique("account-bound request factory")
     val request = lookup(capture.returnType)
     val hierarchy =
         generateSequence(request) {
@@ -100,57 +85,54 @@ internal fun resolveNativeHistory(
                     ?.let(lookup)
             }
             .toList()
-    fun Fingerprint.inHierarchy() = hierarchy.flatMap { matchAllOrNull(it).orEmpty() }
-    val factories = NativeRequestFactoryFingerprint(request.type).matchAllOrNull(service)
+    val methods = hierarchy.flatMap { it.methods }
+    val factories = service.methods.filter { it.hasShape(emptyList(), request.type) }
     val factory =
-        if (factories != null) factories.unique("request factory").originalMethod
+        if (factories.isNotEmpty()) factories.unique("request factory")
         else {
-            NativeRequestFactoryFingerprint(request.type, capture.parameterTypes.first().toString())
-                .matchAll(service)
+            // Newer hosts pass a nullable request context. Require an existing null call site.
+            service.methods
                 .filter { candidate ->
-                    val factory = candidate.originalMethod
-                    NativeNullContextCallerFingerprint(factory)
-                        .matchAllOrNull(service)
-                        .orEmpty()
-                        .any { it.originalMethod.passesNullTo(factory) }
+                    candidate.hasShape(
+                        listOf(capture.parameterTypes.first().toString()),
+                        request.type,
+                    ) &&
+                        service.methods.any { caller ->
+                            caller.instructions().zipWithNext().any { (value, call) ->
+                                value.opcode == Opcode.CONST_4 &&
+                                    (value as? NarrowLiteralInstruction)?.narrowLiteral == 0 &&
+                                    call.opcode == Opcode.INVOKE_VIRTUAL &&
+                                    (call as? ReferenceInstruction)?.reference.toString() ==
+                                        candidate.toString() &&
+                                    (call as? FiveRegisterInstruction)?.registerCount == 2 &&
+                                    call.registerD == (value as? OneRegisterInstruction)?.registerA
+                            }
+                        }
                 }
                 .unique("nullable-context request factory")
-                .originalMethod
         }
-    fun delegatedCalls(method: Method) =
-        method
-            .findInstructionIndicesReversed(
-                methodCall(
-                    definingClass = service.type,
-                    parameters = method.parameterTypes.map(CharSequence::toString),
-                    returnType = method.returnType,
-                )
-            )
-            .map { method.getInstruction<Instruction>(it).getReference<MethodReference>()!! }
-            .filter { it.name != method.name }
-
+    val dispatches = service.methods.filter { it.hasShape(listOf(request.type, EXECUTOR), FUTURE) }
+    // The public entry point delegates to the implementation with the same signature shape.
     val dispatch =
-        NativeBrowseDispatchFingerprint(service.type, request.type)
-            .matchAll(service)
-            .filter { delegatedCalls(it.originalMethod).isNotEmpty() }
+        dispatches
+            .filter { method ->
+                method.references<MethodReference>().any { call ->
+                    dispatches.any { it != method && it.toString() == call.toString() }
+                }
+            }
             .unique("browse dispatch")
-            .originalMethod
-    // A matching call is insufficient: its implementation must also be public and non-static.
-    if (
-        delegatedCalls(dispatch).none {
-            NativeDispatchTargetFingerprint(it).matchOrNull(service) != null
-        }
-    ) {
-        throw PatchException("Series Tracker: native History delegated dispatch is missing")
-    }
     val genericDispatch =
-        listOf(
-                NativeGenericDispatchFingerprint(request.superclass!!),
-                NativeGenericDispatchWithExtraParameterFingerprint(request.superclass!!),
-            )
-            .flatMap { it.matchAllOrNull(service).orEmpty() }
+        service.methods
+            .filter {
+                it.parameterTypes.size in 3..4 &&
+                    it.parameterTypes.first() == request.superclass &&
+                    it.parameterTypes[2] == EXECUTOR &&
+                    it.references<MethodReference>().any { call -> call.returnType == FUTURE } &&
+                    it.returnType == FUTURE &&
+                    AccessFlags.PUBLIC.isSet(it.accessFlags) &&
+                    !AccessFlags.STATIC.isSet(it.accessFlags)
+            }
             .unique("generic dispatch")
-            .originalMethod
 
     fun declared(field: FieldReference): FieldReference =
         hierarchy
@@ -168,9 +150,11 @@ internal fun resolveNativeHistory(
                 }
             }
     val description =
-        NativeRequestDescriptionFingerprint.matchAll(request, 1..1).single().originalMethod
+        request.methods
+            .filter { it.hasString("browseId") && it.hasString("continuation") }
+            .unique("request description")
     fun labeledString(label: String): FieldReference {
-        val instructions = description.instructionsOrNull!!.toList()
+        val instructions = description.instructions()
         val index =
             instructions.indices
                 .filter {
@@ -190,48 +174,52 @@ internal fun resolveNativeHistory(
     }
     val route = labeledString("browseId")
     val continuation = labeledString("continuation")
-    val routeSetter =
-        NativeRequestStringSetterFingerprint(route)
-            .inHierarchy()
-            .unique("browse route setter")
-            .originalMethod
-    NativeHomeRouteSetterFingerprint.match(routeSetter, lookup(routeSetter.definingClass))
-    val continuationSetter =
-        NativeRequestStringSetterFingerprint(continuation)
-            .inHierarchy()
-            .unique("continuation setter")
-            .originalMethod
+    fun setter(field: FieldReference) =
+        methods
+            .filter { method ->
+                method.hasShape(listOf(STRING), "V") &&
+                    method.instructions().any {
+                        it.opcode == Opcode.IPUT_OBJECT &&
+                            ((it as? ReferenceInstruction)?.reference as? FieldReference)
+                                ?.toString() == field.toString()
+                    }
+            }
+            .unique("string setter")
+    val routeSetter = setter(route)
+    if (!routeSetter.hasString("FEwhat_to_watch")) {
+        throw PatchException(
+            "Series Tracker: native History browse setter lost its home-route contract"
+        )
+    }
+    val continuationSetter = setter(continuation)
     val identity =
-        NativeRequestIdentityFingerprint(accountType)
-            .inHierarchy()
-            .unique("request identity")
-            .originalMethod
+        methods.filter { it.hasShape(emptyList(), accountType) }.unique("request identity")
     val baseDescription =
-        NativeBaseRequestDescriptionFingerprint.inHierarchy()
+        methods
+            .filter { it.hasString("serviceName") && it.hasString("clickTrackingParams") }
             .unique("base request description")
-            .originalMethod
     val clickTracking =
         declared(
-            baseDescription.instructionsOrNull!!
-                .toList()
+            baseDescription
+                .instructions()
                 .filter { it.opcode == Opcode.IGET_OBJECT }
-                .mapNotNull { it.getReference<FieldReference>() }
+                .mapNotNull { (it as? ReferenceInstruction)?.reference as? FieldReference }
                 .filter { it.type == "[B" }
                 .unique("click tracking field")
         )
     // The native byte-array setters only null-check and store this field. Our bridge always
     // stores a newly allocated, non-null empty array; there is no native setter side effect.
-    val clickSetters =
-        NativeClickTrackingSetterFingerprint(clickTracking).inHierarchy().map { it.originalMethod }
+    val clickSetters = methods.filter { method ->
+        method.hasShape(listOf("[B"), "V") &&
+            method.references<FieldReference>().any { it.toString() == clickTracking.toString() }
+    }
     if (
         clickSetters.isEmpty() ||
             clickSetters.any { method ->
-                method.instructionsOrNull!!.toList().map { it.opcode } !=
+                method.instructions().map { it.opcode } !=
                     listOf(Opcode.INVOKE_VIRTUAL, Opcode.IPUT_OBJECT, Opcode.RETURN_VOID) ||
-                    method.instructionsOrNull!!
-                        .mapNotNull { it.getReference<MethodReference>() }
-                        .singleOrNull()
-                        ?.toString() != "Ljava/lang/Object;->getClass()Ljava/lang/Class;"
+                    method.references<MethodReference>().singleOrNull()?.toString() !=
+                        "Ljava/lang/Object;->getClass()Ljava/lang/Class;"
             }
     )
         throw PatchException("Series Tracker: native History click tracking setter changed")
@@ -240,13 +228,20 @@ internal fun resolveNativeHistory(
         responseAccessors.map { it.definingClass }.distinct().unique("response adapter")
     val payload =
         responseAccessors
-            .flatMap { it.instructionsOrNull!!.toList() }
+            .flatMap { it.instructions() }
             .filter { it.opcode == Opcode.IGET_OBJECT }
-            .mapNotNull { it.getReference<FieldReference>() }
+            .mapNotNull { (it as? ReferenceInstruction)?.reference as? FieldReference }
             .filter { field ->
                 field.definingClass == responseType &&
-                    NativeResponseConstructorFingerprint(field).matchOrNull(lookup(responseType)) !=
-                        null &&
+                    lookup(responseType).methods.any { constructor ->
+                        constructor.name == "<init>" &&
+                            field.type in constructor.parameterTypes &&
+                            constructor.instructions().any {
+                                it.opcode == Opcode.IPUT_OBJECT &&
+                                    (it as? ReferenceInstruction)?.reference.toString() ==
+                                        field.toString()
+                            }
+                    } &&
                     isProtobufMessage(field.type) { type ->
                         if (type.startsWith("Ljava/") || type.startsWith("Landroid/")) null
                         else lookup(type)
@@ -268,10 +263,10 @@ internal fun resolveNativeHistory(
         throw PatchException("Series Tracker: native History payload is not an accessible protobuf")
     }
     val endpointType =
-        endpointRegistration.instructionsOrNull!!
-            .toList()
+        endpointRegistration
+            .instructions()
             .filter { it.opcode == Opcode.CONST_CLASS }
-            .mapNotNull { it.getReference<TypeReference>()?.type }
+            .mapNotNull { ((it as? ReferenceInstruction)?.reference as? TypeReference)?.type }
             .unique("watch endpoint protobuf")
     if (
         lookup(endpointType).fields.none {
