@@ -1,3 +1,28 @@
+## [0.4.0](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.3.1...series-v0.4.0) (2026-10-02)
+
+### Bug Fixes
+
+* **YouTube - Captions:** Make "Always show" override a manual caption-off ([#3421](https://github.com/thryyy/morphe-series-tracker/issues/3421)) ([a92b8ed](https://github.com/thryyy/morphe-series-tracker/commit/a92b8edc30e31e16ca61e072540ac722a2616ff9))
+* **YouTube - Litho filtering:** Shorts were not hidden on home feed after pressing the back button ([#3416](https://github.com/thryyy/morphe-series-tracker/issues/3416)) ([5c21cf7](https://github.com/thryyy/morphe-series-tracker/commit/5c21cf78bd7cc8fa9d67491cf46c07ae622f02a5))
+* **YouTube - PiP button:** Wrong flyout drawable ([#3448](https://github.com/thryyy/morphe-series-tracker/issues/3448)) ([88e23e1](https://github.com/thryyy/morphe-series-tracker/commit/88e23e11a5fbb7aa860a7341267641951d2dc94f))
+* **YouTube:** Chapters error when selecting ([501e66e](https://github.com/thryyy/morphe-series-tracker/commit/501e66ec5d941f9d688481992621d291f7bf66f0))
+* **YouTube:** Player flyout menu not scrollable in landscape mode ([e3bfa8b](https://github.com/thryyy/morphe-series-tracker/commit/e3bfa8b70c1176c2932811dbc0b48483403c4aba))
+* **YouTube:** Search bar becomes invisible with Hide Status Bar enabled ([b0492b5](https://github.com/thryyy/morphe-series-tracker/commit/b0492b552c0fe9b760bd6e00c56f6ec3bbd005c0))
+
+### New Features
+
+* Update Series source to Morphe 1.45 with recovery and backups ([788ba18](https://github.com/thryyy/morphe-series-tracker/commit/788ba185a04a2acd3aec663be0f4ba1ed8024907)), closes [#3114](https://github.com/thryyy/morphe-series-tracker/issues/3114)
+* **YouTube - Player icon style:** Apply the icon style to the player's own controls ([#3451](https://github.com/thryyy/morphe-series-tracker/issues/3451)) ([415bf3c](https://github.com/thryyy/morphe-series-tracker/commit/415bf3c5f7c9753eb00a9b4924dcbfe15af427cd))
+* **YouTube - Restore original titles:** Restore original channel descriptions ([#3418](https://github.com/thryyy/morphe-series-tracker/issues/3418)) ([3467b84](https://github.com/thryyy/morphe-series-tracker/commit/3467b84d92a19443cc7cd13167a89e56100b338b))
+* **YouTube - Swipe controls:** Add "Volume boost" setting ([#3412](https://github.com/thryyy/morphe-series-tracker/issues/3412)) ([9e393e5](https://github.com/thryyy/morphe-series-tracker/commit/9e393e542cb8de29edacba412acf127dfc0e775c))
+* **YouTube Music:** Add `Android Auto` patch ([#3341](https://github.com/thryyy/morphe-series-tracker/issues/3341)) ([a6d2dae](https://github.com/thryyy/morphe-series-tracker/commit/a6d2dae48732917e834a800bc83e68afc9c6a09f))
+* **YouTube:** Add `Picture-in-picture button` patch ([#3397](https://github.com/thryyy/morphe-series-tracker/issues/3397)) ([6c94728](https://github.com/thryyy/morphe-series-tracker/commit/6c947288a3fc75105ef7e1c02d37a324dc20dc76))
+
+### Updated App Support
+
+* **YouTube Music:** Add experimental support for `9.39.52` ([cfc0435](https://github.com/thryyy/morphe-series-tracker/commit/cfc0435c8f1c4ca09ad76734daae8e4a5acfe4ca))
+* **YouTube Music:** Add support for `9.20.53` ([edd808c](https://github.com/thryyy/morphe-series-tracker/commit/edd808c1e954f6c43e2d4c7226c2689f7ae17da7))
+
 ## [0.3.1](https://github.com/thryyy/morphe-series-tracker/compare/series-v0.3.0...series-v0.3.1) (2026-09-30)
 
 ### Bug Fixes
