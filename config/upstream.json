@@ -1,5 +1,7 @@
 {
   "repository": "https://github.com/MorpheApp/morphe-patches",
-  "commit": "9523afa92124004bd23fae962d95d4edc99887a7",
-  "date": "2026-09-21"
+  "commit": "501e66ec5d941f9d688481992621d291f7bf66f0",
+  "date": "2026-10-02",
+  "release": "v1.45.0",
+  "channel": "preview"
 }

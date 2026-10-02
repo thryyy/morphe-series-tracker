@@ -71,6 +71,27 @@ fun main(args: Array<String>) {
             if (type == "J") check(call.name == "patch_getVideoTime")
         }
     val outside = classes.filterNot { it.type.startsWith(OUR_PREFIX) }.flatMap { it.methods }
+    val seriesNavigation = outside.filter { method -> method.calls().any {
+        it.definingClass == "${OUR_PREFIX}SeriesPlayback;" && it.name == "navigate"
+    } }
+    check(seriesNavigation.isNotEmpty()) { "Series next/previous/autoplay dispatch missing" }
+    seriesNavigation.forEach { method ->
+        val instructions = method.implementation!!.instructions.toList()
+        val call = instructions.indexOfFirst {
+            val ref = (it as? ReferenceInstruction)?.reference as? MethodReference
+            ref?.definingClass == "${OUR_PREFIX}SeriesPlayback;" && ref.name == "navigate"
+        }
+        check(instructions[call + 1].opcode == Opcode.MOVE_RESULT &&
+            instructions[call + 2].opcode == Opcode.IF_EQZ &&
+            instructions[call + 3].opcode == Opcode.RETURN_VOID) {
+            "Series navigation must consume only owned requests"
+        }
+    }
+    val backup = own.single { it.type == "${OUR_PREFIX}BackupPreference;" }
+    val backupCalls = own.filter { it.type.startsWith("${OUR_PREFIX}BackupPreference") }
+        .flatMap { it.methods }.flatMap { it.calls() }
+    check(backupCalls.any { it.name == "exportTextActivity" } &&
+        backupCalls.any { it.name == "importTextActivity" }) { "Series backup must use Morphe file picker" }
     // The switcher must receive the complete native page, not only its scrolling content.
     val browseCreate = outside.single { method ->
         method.calls().any { it.name == "seriesTrackerHistoryView" }

@@ -6,12 +6,12 @@ The checks covered History/Series navigation, retained playlists and positions, 
 
 The redundant settings shortcut was removed and Series Tracker was moved into General. These settings changes were rechecked on 21.16.256 after the other device tests.
 
-147 extension tests and 2 resource tests cover storage, progress, privacy rules, request ownership and UI state. APK checks verify the injected playback, account and History bridges. Native History matching is also checked against renamed bytecode and rejected when required members are missing or ambiguous.
+169 extension tests and 2 resource tests cover storage, progress, privacy rules, request ownership and UI state. APK checks verify the injected playback, account and History bridges. Native History matching is also checked against renamed bytecode and rejected when required members are missing or ambiguous.
 
 21.38.123 remains experimental. This is not exhaustive device coverage: real cross-device synchronization, account/incognito transitions, long background playback and fresh-install onboarding still need dedicated testing.
 
-Current upstream base: Morphe **1.45.0-dev.21** plus three development commits,
-through `444bb0dc1` (30 September 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
+Current upstream base: Morphe **1.45.0** plus subsequent development commits,
+through `501e66ec5` (2 October 2026). Release builds must pass the same automated checks; compatibility is limited to explicitly declared targets.
 
 ## Morphe 1.44.0 update — 22 September 2026
 
@@ -51,3 +51,8 @@ The fork bundle also passes full 90-patch rebuilding and APK inspection on
 No physical-device installation or new cross-device/account/incognito check was
 performed for this update. Upstream now offers additional experimental YouTube
 targets, but Series support remains limited to the three verified versions.
+
+## Morphe update and Series improvements — 2 October 2026
+
+See [the current validation report](MORPHE_UPDATE_20261002.md) for the latest
+upstream base, backup/Undo/recovery changes, automated checks and device limits.

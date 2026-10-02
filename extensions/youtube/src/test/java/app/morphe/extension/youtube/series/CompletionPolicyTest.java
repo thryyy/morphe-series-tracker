@@ -43,4 +43,16 @@ public class CompletionPolicyTest {
         assertTrue(CompletionPolicy.completed(Long.MAX_VALUE, Long.MAX_VALUE, 100, 0));
         assertFalse(CompletionPolicy.completed(0, 0, 92, 30));
     }
+
+    @Test
+    public void percentageNeverSkipsSeveralMinutesOfALongEpisode() {
+        assertFalse(CompletionPolicy.completed(3_312_000, 3_600_000, 92, 30));
+        assertFalse(CompletionPolicy.completed(3_509_999, 3_600_000, 92, 30));
+        assertTrue(CompletionPolicy.completed(3_510_000, 3_600_000, 92, 30));
+        assertFalse(CompletionPolicy.completedPercentage(92, 3_600_000, 92));
+        assertFalse(CompletionPolicy.completedPercentage(97, 3_600_000, 92));
+        assertTrue(CompletionPolicy.completedPercentage(98, 3_600_000, 92));
+        assertFalse(CompletionPolicy.completedPercentage(98, 7_200_000, 92));
+        assertTrue(CompletionPolicy.completedPercentage(100, 7_200_000, 100));
+    }
 }

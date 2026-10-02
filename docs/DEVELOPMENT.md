@@ -18,8 +18,8 @@ Update `config/toolchain-lock.json` when changing build inputs; record the sourc
 
 ## Upstream base
 
-The source and upstream PR include Morphe **1.45.0-dev.21** and subsequent
-`dev` changes through `444bb0dc1` (30 September 2026). Both now follow the
+The source and upstream PR include Morphe **1.45.0** and subsequent
+`dev` changes through `501e66ec5` (2 October 2026). Both now follow the
 preview/development channel. Preserve the separate Series release metadata and
 version sequence when merging upstream; a Series stable tag does not imply a
 stable Morphe base. Build inputs use the upstream-declared patch library

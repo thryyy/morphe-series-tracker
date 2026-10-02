@@ -567,16 +567,27 @@ public class TrackerRepositoryTest {
 
     @Test
     public void premiereRefreshRepairsOldBadgeAndCountsOnlyWhenReleased() throws Exception {
-        List<Episode> scheduled = CatalogParser.parse(
-                CatalogTest.fixture("taskmaster_premiere.json"), 0, false).episodes;
-        db.saveSeries("PLone", "Taskmaster", "",
-                new CatalogClient.Catalog("Taskmaster", scheduled.subList(0, 4)), 1);
+        List<Episode> scheduled =
+                CatalogParser.parse(CatalogTest.fixture("taskmaster_premiere.json"), 0, false)
+                        .episodes;
+        db.saveSeries(
+                "PLone",
+                "Taskmaster",
+                "",
+                new CatalogClient.Catalog("Taskmaster", scheduled.subList(0, 4)),
+                1);
         for (Episode episode : scheduled.subList(0, 4))
             db.mark(episode.videoId, TrackerModels.Override.WATCHED, 2);
         Episode premiere = scheduled.get(4);
         List<Episode> released = new ArrayList<>(scheduled);
-        released.set(4, new Episode(premiere.ordinal, premiere.videoId, premiere.title,
-                premiere.durationMs, true));
+        released.set(
+                4,
+                new Episode(
+                        premiere.ordinal,
+                        premiere.videoId,
+                        premiere.title,
+                        premiere.durationMs,
+                        true));
         // Reproduce a badge cached by the old parser, which ignored premiere metadata.
         db.publish(db.beginRefresh("PLone"), new CatalogClient.Catalog("Taskmaster", released), 3);
         assertEquals(1, db.series("PLone").newEpisodeCount);
@@ -713,7 +724,7 @@ public class TrackerRepositoryTest {
         db.mark("b", TrackerModels.Override.UNWATCHED, 2);
         db.startHere("p", 1, 1, "a", 3);
         assertEquals(
-                0,
+                1,
                 db.mergeRemote(
                         db.historyEpoch(),
                         db.manualRevision(),

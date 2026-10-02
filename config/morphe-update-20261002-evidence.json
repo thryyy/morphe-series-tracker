@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-02",
+  "upstream": {
+    "repository": "MorpheApp/morphe-patches",
+    "release": "v1.45.0",
+    "channel": "preview/development",
+    "commit": "501e66ec5d941f9d688481992621d291f7bf66f0"
+  },
+  "branches": {
+    "pr": "codex/series-tracking-pr",
+    "fork": "main"
+  },
+  "production_equality": {
+    "files": 67,
+    "manifest_sha256": "9861f4329adaa37a2c57c1d38785f0e061d965cc29522e0e520cf014476ed463",
+    "result": "PR, fork and exported integration match"
+  },
+  "builds": {
+    "integration": "passed",
+    "pr": "passed",
+    "fork": "passed"
+  },
+  "series_extension_tests": {
+    "tests": 169,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "series_patch_tests": {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "all_patch_tests": {
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 5
+  },
+  "upstream_skips": "Five Jam tests require a YouTube Music APK, not supplied",
+  "strings_validated": 88321,
+  "host_fingerprints": "Original and renamed hosts plus invalid-contract rejection passed on all three declared targets",
+  "apk_checks": {
+    "minimum": {
+      "version": "21.13.164",
+      "applied_patches": 91,
+      "failed_patches": 0,
+      "rebuilt": true,
+      "apk_inspection": "passed",
+      "unique_classes": 56882,
+      "series_classes": 359,
+      "sha256": "c3d5bbb7f14b0d8f7f863ac591d500a2b693f904a924a4fa695b8f7d39c68eca"
+    },
+    "stable": {
+      "version": "21.16.256",
+      "applied_patches": 91,
+      "failed_patches": 0,
+      "rebuilt": true,
+      "apk_inspection": "passed",
+      "unique_classes": 57271,
+      "series_classes": 359,
+      "sha256": "2491f4b00dab1d65ac7e3c932c6d114c70bf3e1a0f534c9a2dd3ec8c0729036a"
+    },
+    "experimental": {
+      "version": "21.38.123",
+      "applied_patches": 1,
+      "failed_patches": 0,
+      "rebuilt": true,
+      "apk_inspection": "passed",
+      "unique_classes": 62223,
+      "series_classes": 359,
+      "sha256": "cf6d0961c353d0a27ce47596c2514a472eddcf2a3fde34c740addf6a34c59815",
+      "scope": "Series plus dependencies; upstream no longer selects this legacy version"
+    },
+    "experimental-full": {
+      "version": "21.38.123",
+      "applied_patches": 91,
+      "failed_patches": 0,
+      "rebuilt": true,
+      "apk_inspection": "passed",
+      "unique_classes": 62223,
+      "series_classes": 359,
+      "sha256": "5c1c4812bb538bfdef8fb9e1976767825864777c48edf705505f53cebab098a1",
+      "scope": "Full bundle development check using explicit --force for legacy version; no change to upstream target declarations"
+    },
+    "fork": {
+      "version": "21.16.256",
+      "applied_patches": 91,
+      "failed_patches": 0,
+      "rebuilt": true,
+      "apk_inspection": "passed",
+      "unique_classes": 57271,
+      "series_classes": 359,
+      "sha256": "853c65425545d38fee34e04468341d5d5d057390a8dbbcd078aed93931ab5644"
+    }
+  },
+  "release_metadata_tests": {
+    "tests": 3,
+    "failures": 0
+  },
+  "npm_lock_installation": "npm ci --ignore-scripts passed",
+  "pr_scope": "Production only; build files and workflows identical to upstream",
+  "portable_patch": "Clean-base application and reverse application passed",
+  "artifacts_sha256": {
+    "upstream/series-tracking.patch": "4d741ed867b6494409b7119d7c4cadbb52ff7d92c03503f3959bfdac9e46b69b",
+    "pr-bundle-1.45.0.mpp": "0beacce6008d3d723cf44dffcdbe46ed0af6313f0ec5342416601ecd36b1a22f",
+    "fork-bundle-before-release-0.3.1.mpp": "267bb854a6918266d7a07bed91bf24732805a81b9a6999a9f5aa53803f23a176"
+  },
+  "limits": [
+    "Emulator UI checks in series-polish-evidence.json predate this upstream merge.",
+    "No physical-device test of fresh cross-device progress, native Next/Previous/autoplay or account/incognito transitions in this update.",
+    "New upstream experimental APKs 21.38.130 and 21.39.522 were not available and are not declared supported by Series."
+  ]
+}

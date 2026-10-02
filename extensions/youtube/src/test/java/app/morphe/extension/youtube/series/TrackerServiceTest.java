@@ -73,6 +73,27 @@ public class TrackerServiceTest {
     }
 
     @Test
+    public void singleEditsAndRemovalExposeUndoOnlyForItsLifetime() {
+        save("PLone");
+        service.mark("aaaaaaaaaaa", TrackerModels.Override.WATCHED, () -> {}, errors::add);
+        drainStorage();
+        assertTrue(service.canUndo());
+        service.undo(() -> {}, errors::add);
+        drainStorage();
+        assertFalse(repository.progress("aaaaaaaaaaa").watched());
+        assertFalse(service.canUndo());
+        service.remove("PLone", () -> {}, errors::add);
+        drainStorage();
+        assertTrue(service.canUndo());
+        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofSeconds(30));
+        assertFalse(service.canUndo());
+        service.undo(() -> {}, errors::add);
+        drainStorage();
+        assertTrue(repository.library().isEmpty());
+        assertTrue(errors.isEmpty());
+    }
+
+    @Test
     public void retryAfterInitializationFailureRestoresMembershipAndInterruptedFetches() {
         save("PLone");
         repository.beginRefresh("PLone");

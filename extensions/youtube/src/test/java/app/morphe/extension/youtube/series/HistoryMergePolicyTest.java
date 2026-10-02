@@ -82,7 +82,10 @@ public class HistoryMergePolicyTest {
                     TrackerModels.Override.WATCHED, TrackerModels.Override.UNWATCHED
                 }) {
             Progress local = new Progress("abcdefghijk", 1, 300_000, false, override, 10, 7);
-            assertSame(local, merge(local, row(290_000L, 96), null, 30));
+            Progress merged = merge(local, row(290_000L, 96), null, 30);
+            assertEquals(290_000L, merged.positionMs);
+            assertEquals(override, merged.override);
+            assertEquals(override == TrackerModels.Override.WATCHED, merged.watched());
         }
     }
 
